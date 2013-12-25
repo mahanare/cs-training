@@ -17,16 +17,32 @@ package in.careerscale.batch3.hari;
  */
 public class HelloWorld {
 	
+	private String name;
+	
+	public HelloWorld(){
+		System.out.println("Constructor with no arguments");
+	}
+	
+	public HelloWorld(String name){
+		System.out.println("Constructor with parameter name");
+		this.name=name;
+	}
+	
 	public void sayHello(){
-		System.out.println("Hello World");
+		System.out.println("Hello World " + name);
 	}
 
 	public static void main(String[] args) {
-		//int i=10;
-		HelloWorld world = new HelloWorld();
-		world.sayHello();
+		//int size=10;
+		HelloWorld hariWorld = new HelloWorld();
+		hariWorld.sayHello();
 		
-
+		HelloWorld brunoWorld = new HelloWorld("Bruno");
+		brunoWorld.sayHello();
+		
+		HelloWorld asraWorld = new HelloWorld("Asra");
+		asraWorld.sayHello();
+		
 	}
 
 }
