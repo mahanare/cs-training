@@ -3,13 +3,13 @@ package in.careerscale.batch3.bruno;
 public class Test2 {
 
 	private String name;
-	
-	public Test2(String name, boolean state) {
-		this.name=name;
+
+	public Test2(String name) {
+		this.name = name;
 	}
-	
-	public String toString(){
-		return "My name is " + getName(); 
+
+	public String toString() {
+		return "My name is " + getName();
 	}
 
 	public String getName() {
