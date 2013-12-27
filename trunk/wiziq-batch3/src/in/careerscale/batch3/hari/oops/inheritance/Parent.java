@@ -1,4 +1,4 @@
-package in.careerscale.batch3.hari.oops;
+package in.careerscale.batch3.hari.oops.inheritance;
 
 public class Parent {
 	

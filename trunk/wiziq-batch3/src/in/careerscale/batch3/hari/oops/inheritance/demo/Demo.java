@@ -1,7 +1,7 @@
-package in.careerscale.batch3.hari.oops.demo;
+package in.careerscale.batch3.hari.oops.inheritance.demo;
 
-import in.careerscale.batch3.hari.oops.Child;
-import in.careerscale.batch3.hari.oops.Parent;
+import in.careerscale.batch3.hari.oops.inheritance.Child;
+import in.careerscale.batch3.hari.oops.inheritance.Parent;
 //java.lang
 public class Demo {
 
@@ -10,7 +10,7 @@ public class Demo {
 		Parent parent = new Parent("Hari");
 		parent.sayGoodMorning();
 		parent.sayHello();
-
+        parent.notify();
 		//parent.revealSecret();
 		//parent.familySecret();
 		//parent.sayGoodEvening();
