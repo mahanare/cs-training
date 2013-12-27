@@ -1,4 +1,4 @@
-package in.careerscale.batch3.hari.oops;
+package in.careerscale.batch3.hari.oops.inheritance;
 
 public class Child extends Parent {
 	
@@ -10,6 +10,7 @@ public class Child extends Parent {
 	public void saySomething(){
 		System.out.println("Something something");
 		sayHello();
+		
 	}
 
 }

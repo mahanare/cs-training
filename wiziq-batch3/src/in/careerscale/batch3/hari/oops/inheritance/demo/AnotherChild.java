@@ -1,6 +1,6 @@
-package in.careerscale.batch3.hari.oops.demo;
+package in.careerscale.batch3.hari.oops.inheritance.demo;
 
-import in.careerscale.batch3.hari.oops.Parent;
+import in.careerscale.batch3.hari.oops.inheritance.Parent;
 
 public class AnotherChild extends Parent {
 	
