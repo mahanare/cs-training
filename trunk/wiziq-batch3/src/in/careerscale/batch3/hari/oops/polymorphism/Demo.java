@@ -4,7 +4,8 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		
+		//java Demo
+		//Demo.main(params)
 		Parent parent = new Parent();
 		parent.sayHello(1);
 		parent.sayHello("Vamsi");
@@ -16,6 +17,9 @@ public class Demo {
 		child.sayHello(2);
 		child.sayHello("hari");
 		child.sayHello("abc", 12);
+		
+		
+		Child child1 = new Child();
 
 	}
 
