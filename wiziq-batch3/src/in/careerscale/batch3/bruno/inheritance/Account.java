@@ -7,10 +7,8 @@ public class Account {
 	private static int numAccounts = 0; // Number of accounts
 
 	public Account() {
-
 		numAccounts++;
 		accountNumber = numAccounts;
-
 	}
 
 	public void deposit(double sum) {
@@ -18,7 +16,7 @@ public class Account {
 			bal += sum;
 		else
 			System.err.println("Account.deposit(...): "
-					+ "cannot deposit negative amount.");
+					+ "cannot deposit a negative amount.");
 	}
 
 	public void withdraw(double sum) {

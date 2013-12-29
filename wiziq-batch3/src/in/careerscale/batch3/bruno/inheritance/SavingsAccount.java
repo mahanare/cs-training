@@ -2,46 +2,45 @@ package in.careerscale.batch3.bruno.inheritance;
 
 public class SavingsAccount extends Account {
 
-	private float taxaJuroAno;
+	private float anualTaxInterest;
 
 	public SavingsAccount() {
 		super();
-		taxaJuroAno = 0.0F;
+		anualTaxInterest = 0.0F;
 	}
 
 	public SavingsAccount(int a) {
 		super();
-		this.taxaJuroAno = 0;
+		this.anualTaxInterest = 0;
 
 	}
 
 	public SavingsAccount(float taxa) {
 		super();
-		this.taxaJuroAno = taxa;
+		this.anualTaxInterest = taxa;
 
 	}
 
-	public void AccJuros(int meses) {
-		double saldo = getBalance();
-		double valorJuros = ((saldo * getTaxaJuro()) * meses) / 12;
+	public void AccJuros(int months) {
+		double balance = getBalance();
+		double interestsValue = ((balance * getTaxInterest()) * months) / 12;
 		// valor do juros e anual deve-se aplicar uma taxa correspondente ao periodo de calculo do juros!
-		deposit(valorJuros);
+		deposit(interestsValue);
 
 	}
 
 	/**
-	 * @return the taxaJuro
+	 * @return Get Tax Interest
 	 */
-	public float getTaxaJuro() {
-		return taxaJuroAno;
+	public float getTaxInterest() {
+		return anualTaxInterest;
 	}
 
 	/**
-	 * @param taxaJuro
-	 *            the taxaJuro to set
+	 * @param Set Tax Interest
 	 */
 	public void setTaxaJuro(float taxaJuro) {
-		this.taxaJuroAno = taxaJuro;
+		this.anualTaxInterest = taxaJuro;
 	}
 
 }
