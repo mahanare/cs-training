@@ -12,7 +12,6 @@ public class Bank {
 
 	public void addAccount(Account account) {
 		this.accounts.add(account);
-
 	}
 
 	public int getNumberOfAccounts() {
@@ -23,14 +22,14 @@ public class Bank {
 		for (Account aAccount : accounts) {
 			if (aAccount instanceof SavingsAccount) {
 				SavingsAccount theAccount = (SavingsAccount) aAccount;
-				System.out.println("Taxes are: " + theAccount.getTaxaJuro());
-				theAccount.setBal(theAccount.getTaxaJuro());
+				System.out.println("Taxes are: " + theAccount.getTaxInterest());
+				theAccount.setBal(theAccount.getTaxInterest());
 			}
 			if (aAccount instanceof DepositAccount) {
 				DepositAccount theAccount = (DepositAccount) aAccount;
-				System.out.println("O saldo é: " + theAccount.getBalance());
+				System.out.println("The balance is: " + theAccount.getBalance());
 				if (theAccount.getBalance() < 0) {
-					System.out.println("A sua conta está negativa.");
+					System.out.println("You have a negative balance.");
 				}
 			}
 		}
