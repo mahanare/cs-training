@@ -43,12 +43,21 @@ public class ExceptionsDemo {
 		ExceptionsDemo demo = new ExceptionsDemo();
 		try {
 			demo.demoSampleException();
+			System.out.println("This will never be printing");
 			//
 			//
 			//
-		} catch (ArithmeticException e) {
-			System.err.println(e.getMessage());
 		}
+		 catch (ArithmeticException e) {
+				System.err.println(e.getMessage());
+			}
+		catch(Exception exception){
+			exception.printStackTrace();
+		} 
+		finally{
+			System.out.println("This gets executed whether there is an exception or not.");
+		}
+		
 		System.out.println("After demoSampleException() call");
 		
 		try {
