@@ -6,13 +6,10 @@ public class SharedObject2 {
 		
 		for(int i=10; i<20; i++){
 			System.out.println("SO2 - Thread id  : " + threadId  + " and i value : " + i);
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-			
-				e.printStackTrace();
-			}
+		   
 		}
+		
+		 
 	}
 
 }

@@ -18,11 +18,14 @@ public class Thread2 extends Thread {
 		synchronized (shared2) {
 			shared2.displayNumbers(id);
 			try {
+				//shared2.wait();
+				Thread.yield();
 				sleep(5000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			//shared2.notifyAll();
 			synchronized (shared1) {
 				shared1.displayNumbers(id);
 			}
