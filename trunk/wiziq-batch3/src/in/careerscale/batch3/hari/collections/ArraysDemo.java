@@ -31,6 +31,7 @@ public class ArraysDemo {
         myList.add(1);
         myList.add(1);
         myList.add(1);
+        myList.retainAll(null);
         
         System.out.println("myList size :" + myList.size());
         
