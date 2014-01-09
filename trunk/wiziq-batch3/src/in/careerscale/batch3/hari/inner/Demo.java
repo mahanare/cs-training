@@ -2,10 +2,11 @@ package in.careerscale.batch3.hari.inner;
 
 public class Demo {
 	HelloWorld world;
-	static class MyStaticClass {
+	int id;
+	static public class MyStaticClass {
 
 		public MyStaticClass() {
-
+		
 		}
 
 		public void sayHello() {
@@ -16,7 +17,7 @@ public class Demo {
 	class MyInnerClass {
 
 		public MyInnerClass() {
-
+			
 		}
 
 		public void sayHello() {
@@ -32,6 +33,7 @@ public class Demo {
 		class LocalInnerClass{
 			
 			public void sayHello(){
+			
 				System.out.println("Hello from demoLocalInnerClass" + name);
 			}
 		}
@@ -49,6 +51,7 @@ public class Demo {
 			
 			@Override
 			public void sayHello() {
+				id++;
 				System.out.println("Hello from HelloWorld (anonymous inner class");
 				
 			}
@@ -71,7 +74,9 @@ public class Demo {
 		Demo demo = new Demo();
 
 		MyInnerClass myInner = demo.new MyInnerClass();
-
+			
+		myInner.sayHello();
+	
 		MyStaticClass myStatic = new MyStaticClass();
 		
 	}
