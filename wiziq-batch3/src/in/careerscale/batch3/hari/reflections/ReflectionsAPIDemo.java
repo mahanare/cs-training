@@ -18,9 +18,7 @@ public class ReflectionsAPIDemo {
 	 * @throws IllegalArgumentException 
 	 */
 	public static void main(String[] args) throws IllegalArgumentException, InstantiationException, IllegalAccessException, InvocationTargetException {
-		
-		
-		
+
 		ReflectionsAPIDemo demo = new ReflectionsAPIDemo();
 		demo.reflectionsDemo(demo);
 	
