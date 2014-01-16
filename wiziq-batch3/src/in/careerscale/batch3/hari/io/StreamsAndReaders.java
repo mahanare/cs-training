@@ -107,9 +107,9 @@ public class StreamsAndReaders {
 
 		StreamsAndReaders reader = new StreamsAndReaders();
 		
-	//	reader.dataInputStreamDemo();
-	//reader.readStream();
-		reader.inputReaderDemo();
+//	reader.dataInputStreamDemo();
+   reader.readStream();
+	//	reader.inputReaderDemo();
 	//	reader.bufferedReaderDemo();
 
 	//	reader.fileWritingDemo();
