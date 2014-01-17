@@ -34,6 +34,7 @@ public class JDBCApplication {
 
 	
 	private Connection getConnection() throws SQLException {
+		
 		return DriverManager.getConnection(conString, "root", "secret");
 	}
 
@@ -127,7 +128,7 @@ public class JDBCApplication {
     delimiter //
 	create procedure getDeptName(IN employee_id integer, out dept_name varchar(100))
 		 begin
-		select d.name into dept_name from department d, employee e where e.department_id = d.id and e.id = employee_id;
+		select d.name into dept_name from department d, employee e where e.id = employee_id and d.id =e.department_id ;
 		end //
 	delimiter ;
  	 
