@@ -10,10 +10,20 @@
  text-align: center;
 }
 </style>
+
+<script type="text/javascript">
+
+function validate(){
+
+	alert('hello');
+	//alert(document.getElementById('userName').Attr('value'));
+}
+
+</script>
 </head>
 <body>
 
-<form method="POST" action="login" >
+<form method="POST" action="login" onsubmit="javascript:validate()" >
 <div class="loginPanel">
 <h1 >Login page</h1>
 <label for="userName" id="userLabel">User Name</label> 
