@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.careeerscale.officeweb.dao.LoginDAO;
+
 /**
  * Servlet implementation class LoginServlet
  */
@@ -44,9 +46,10 @@ public class LoginServlet extends HttpServlet {
 		 String user = request.getParameter("userName");
 		 String password = request.getParameter("password");
 		 
-		 
+		 LoginDAO dao = new LoginDAO();
+		 boolean result= dao.login(user, password);
 		 PrintWriter writer = response.getWriter();
-		 writer.write("hello world");
+		 writer.write("Login status : "+ result);
 		 
 		 
 		 System.out.println(user + "  " +  password);
