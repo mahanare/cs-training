@@ -21,11 +21,20 @@
 <script type="text/javascript" src="js/jquery/jquery.validate.min.js"></script>
 <script type="text/javascript">
 
-function validate(){
+function validate(name){
 
-	alert('hello');
+	alert('hello  ' + name);
+	var userName = document.getElementById('userName');
+	userName.value ='Bruno';
+	alert(userName.value);
 	//alert(document.getElementById('userName').Attr('value'));
 }
+
+
+</script>
+
+<script type="text/javascript">
+
 
 $(document).ready(function () {
 
@@ -41,14 +50,15 @@ $(document).ready(function () {
 <body>
 
 	<form id='loginForm' method="POST" action="login"
-		onsubmit="javascript:validate()">
+		onsubmit="javascript:validate('hari')">
 		<div class="loginPanel">
 			<h1>Login page</h1>
 			<label for="userName" id="userLabel">User Name</label> <input
-				type="text" id="userName" name="userName" class="required" /> <br /> <label
-				for="password" id="passwordLabel">Password</label> <input
-				type="password" id="password" name="password" class="required" /> <br /> <input
-				type="submit" name="login" value="login" /> <input type="reset" />
+				type="text" id="userName" name="userName" class="required" /> <br />
+			<label for="password" id="passwordLabel">Password</label> <input
+				type="password" id="password" name="password" class="required" /> <br />
+			<input type="submit" name="login" value="login" /> <input
+				type="reset" />
 		</div>
 
 	</form>
