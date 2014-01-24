@@ -1,0 +1,56 @@
+body{
+
+background-color: yellow;
+/** background-image: url("C:/Users/harinath/Desktop/IMG_30122013_114916.png"); 
+*/
+
+}
+
+h1{
+
+font-weight: bolder;
+color:  green;
+font-size: 5em;
+}
+
+p{
+font-size: :3em;
+}
+
+#header1{
+
+font-weight: bolder;
+color:  blue;
+font-size: 4em;
+
+}
+
+.custom_header{
+font-weight: lighter;
+color:  red;
+font-size: 3em;
+}
+
+div h3{
+  font-weight: bolder;
+color:  brown;
+font-size: 3em;
+}
+
+#my_div #header4{
+font-weight: lighter;
+color:  orange;
+font-size: 3.5em;
+}
+
+#my_div #header5{
+font-weight: lighter;
+color:  green;
+font-size: 4em;
+}
+
+#header6, #header7{
+font-weight: lighter;
+color:  navy;
+font-size: 4em;
+}
