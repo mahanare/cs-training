@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.careeerscale.officeweb.dao.LoginDAO;
+import officeweb.dao.LoginDAO;
 
 /**
  * Servlet implementation class LoginServlet
