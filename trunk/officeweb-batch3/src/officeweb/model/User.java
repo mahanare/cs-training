@@ -1,4 +1,4 @@
-package com.careeerscale.officeweb.model;
+package officeweb.model;
 
 import java.sql.Date;
 
