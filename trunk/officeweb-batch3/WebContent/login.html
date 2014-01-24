@@ -5,9 +5,11 @@
 <title>Login page</title>
 
 <style type="text/css">
-.loginPanel{
-
- text-align: center;
+.loginPanel {
+	text-align: center;
+	background-color: orange;
+	border-bottom-width: 5px;
+	border-style: solid;
 }
 </style>
 
@@ -23,25 +25,23 @@ function validate(){
 </head>
 <body>
 
-<form method="POST" action="login" onsubmit="javascript:validate()" >
-<div class="loginPanel">
-<h1 >Login page</h1>
-<label for="userName" id="userLabel">User Name</label> 
+	<form method="POST" action="login" onsubmit="javascript:validate()">
+		<div class="loginPanel">
+			<h1>Login page</h1>
+			<label for="userName" id="userLabel">User Name</label> 
+			<input
+				type="text" id="userName" name="userName" /> <br />
+			 <label
+				for="password" id="passwordLabel">Password</label>
+				 <input
+				type="password" id="password" name="password" /> <br /> 
+				<input
+				type="submit" name="login" value="login" /> 
+				<input type="reset" />
+		</div>
 
-<input type="text" id="userName" name="userName"/>
-<br/>
+	</form>
 
-<label for="password" id="passwordLabel">Password</label>
-<input type="password" id="password" name="password" />
- <br />
- 
- <input type="submit" name="login" value="login"/>
- 
- <input type="reset" />
- </div>
- 
- </form>
- 
 
 
 </body>
