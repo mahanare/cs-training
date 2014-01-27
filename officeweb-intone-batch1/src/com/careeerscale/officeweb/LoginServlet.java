@@ -5,9 +5,11 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.careeerscale.officeweb.dao.LoginDAO;
 
@@ -26,18 +28,14 @@ public class LoginServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	/**
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 String user = request.getParameter("userName");
 		 String password = request.getParameter("password");
 		 
 		 System.out.println(user + "  " +  password);
 	}
-	
-	*/
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -51,8 +49,29 @@ public class LoginServlet extends HttpServlet {
 		 PrintWriter writer = response.getWriter();
 		 writer.write("Login status : "+ result);
 		 
+		 HttpSession session = request.getSession();
 		 
-		 System.out.println(user + "  " +  password);
+		 
+		 Integer count = 0;
+		 if(session.getAttribute("test") !=null){
+			 count = (Integer) session.getAttribute("test") ;
+		 }
+		count++;
+		 session.setAttribute("test", count);
+		  
+		 Cookie[] cookies =request.getCookies();
+		 
+		 for (Cookie cookie : cookies) {
+			System.out.println(cookie);
+		}
+		 //session
+		 //cookies
+		 //url redirection/hidden fields
+		 
+		 response.addCookie(new Cookie("mykey", "myValue"));
+		 System.out.println(user + "  " +  password +  " sesssion count is :" + count);
+		 
+		 response.sendRedirect("http://google.com");
 				 
 	}
 
