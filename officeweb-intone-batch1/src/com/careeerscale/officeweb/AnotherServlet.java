@@ -3,6 +3,7 @@ package com.careeerscale.officeweb;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -33,17 +34,14 @@ public class AnotherServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter writer = response.getWriter();
-
 		
-		int count =0;
-		if(getServletContext().getAttribute("count") !=null){
-			count = (Integer)getServletContext().getAttribute("count");
-			writer.write("  count from context is " + count);
-			count++;
-		}
+		//response.sendRedirect("http://google.com");
 		
-		getServletContext().setAttribute("count", count++);
+		RequestDispatcher dispatcher =  getServletContext().getRequestDispatcher("/home");
+		//dispatcher.forward(request, response);
+		dispatcher.include(request, response);
+		
+		///
 	}
 
 	/**
