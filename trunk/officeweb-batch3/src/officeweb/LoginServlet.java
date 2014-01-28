@@ -35,6 +35,12 @@ public class LoginServlet extends HttpServlet {
 		 String password = request.getParameter("password");
 		 
 		 System.out.println(user + "  " +  password);
+		 
+		 String initMessage = getServletContext().getInitParameter("message");
+		 
+		 PrintWriter writer = response.getWriter();
+		 
+		 writer.write("initMessage " + initMessage);
 	}
 	
 
