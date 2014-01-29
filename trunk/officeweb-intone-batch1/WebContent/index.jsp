@@ -25,6 +25,12 @@ session.setAttribute("name", "hari");
 
 %>
 
+
+<%! int id; %>
+<br/>
+<br/>
+<%=session.getAttribute("name") %>
+
 JSP implicit objects are: <br/>
 <ul>
 <li> request</li>
