@@ -5,22 +5,22 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class AnotherSessionServlet
+ * Servlet implementation class CookieReader
  */
-@WebServlet("/anotherSession")
-public class AnotherSessionServlet extends HttpServlet {
+@WebServlet("/cookieReader")
+public class CookieReader extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AnotherSessionServlet() {
+    public CookieReader() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,12 +29,13 @@ public class AnotherSessionServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session = request.getSession();
-		String userId = (String)session.getAttribute("userId");
+		Cookie[] cookies =request.getCookies();
+		
 		PrintWriter writer = response.getWriter();
-		writer.write("the  user id from session is " + userId);
-		session.invalidate();
-		//session.removeAttribute(paramString);
+		for (Cookie cookie : cookies) {
+			
+			writer.write("cookie name is " + cookie.getName() + "  cookie value is : " + cookie.getValue());
+		}
 	}
 
 	/**
