@@ -64,9 +64,10 @@ public class HomeServlet extends HttpServlet {
 		writer.write(message);  
 		
 		count = count + 1;       
-		
+		writer.write("<html> <body>");
 		writer.write("servlet context parameter value " + initMessage);
-
+		writer.write("<h1> this is my H1 heading from servlet </h1>");
+		writer.write("</body></html>");
 	}
 
 	/**
