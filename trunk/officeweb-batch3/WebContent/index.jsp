@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import=""%>
+    pageEncoding="ISO-8859-1" import="" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,6 +22,7 @@ String name = request.getParameter("name");
 out.println("The name from request param is " + name);
 
 session.setAttribute("name", "hari");
+
 
 %>
 
