@@ -220,7 +220,6 @@
 		</tr>
 	</table>
 
-<e:customTag  customProperty ="this is java training session" > </e:customTag>
 
 </body>
 </html>
