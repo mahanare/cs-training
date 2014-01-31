@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+
+#container {
+	width: 900px;
+	position: relative;
+}
+
+#header {
+	padding: 10px;
+	background-color: #ffffcc;
+	font-family: cursive;
+	font-size: 40px;
+	color: green;
+	height: 50px;
+	text-align: center;
+}
+
+#right {
+	position:absolute;
+	width:400px;
+	padding: 10px;
+	margin-left: 400px;
+	height: 300px;
+	text-align: left;
+	border-style: dotted;
+	border-color: grey;
+	font-size: 20px;
+	font-family: monospace;
+	color: green;
+}
+
+#body {
+	text-shadow:green;
+	position:absolute;
+	padding: 10px;
+	margin-left:30px;
+	width:300px;
+	font-size: 20px;
+	font-family: script;
+	color: orange;
+	table-layout: auto;
+}
+
+h1{
+	color:maroon;
+	font-family: fantasy;
+	}
+	table{
+	border-width:3px;
+	background-color: yellow;
+	border-style:double;
+	border-color: red;
+	color: red;
+	}
