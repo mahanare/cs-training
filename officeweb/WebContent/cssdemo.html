@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CSS Demo</title>
+<link rel="stylesheet" type="text/css" href="css/site.css" />
+<script type="text/javascript">
+
+function hello(){
+	alert(' Hello world');
+	//sdasds
+	document.getElementById('myButton').setAttribute("value", "you clicked me");
+}
+
+
+function validate(){
+	
+	var message="";
+	var username = document.getElementById('username').getAttribute('value');
+	var password = document.getElementById('password').getAttribute('value');
+	
+	if(username == null  || username.length  <=0)
+		{
+		 message = message + 'User name can not be empty. \n';
+		}
+	
+	if(password == null  || password.length  <=0)
+	{
+	 message = message + 'Password can not be empty.';
+	}
+	
+	if(message.length > 0)
+		alert(message);
+}
+</script>
+
+</head>
+<body>
+  <p > test for generic paragraph style</p> 
+        <p id="box"> test for paragraph style for the given paragraph ID </p> 
+        
+        <p class='myHeader'>
+         This paragraph uses 'myStyle' css class.
+        </p>
+        
+         <h1 class='myHeader' >Hello this is the header</h1>
+
+
+        <div class='myCustomStyle'>
+        And my DIV uses myCustomStyle  .....
+        
+        </div>
+        
+        <form name='myForm' id='myForm' >
+		Username<input type='text' id='username' name='username' />   <br>
+		password <input type="password" id= 'password' name='password' /> <br/>
+		<input type='submit'  name='Login' onclick="validate()" />     
+        </form>
+
+
+
+</body>
+</html>
