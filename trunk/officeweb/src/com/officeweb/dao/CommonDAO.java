@@ -31,7 +31,7 @@ public class CommonDAO {
 		try {
 			Connection con = JDBCConnectionManager.getConnection();
 			Statement stmt = con.createStatement();
-			ResultSet results = stmt.executeQuery("select id,first_name from employee where manager_id=5");
+			ResultSet results = stmt.executeQuery("select id,first_name from employee where designation_id=5");
 			while (results.next()) {
 				managers.put(results.getInt("id"), results.getString("first_name"));
 			}
