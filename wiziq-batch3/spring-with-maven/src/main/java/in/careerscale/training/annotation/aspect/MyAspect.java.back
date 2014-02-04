@@ -1,0 +1,17 @@
+package in.careerscale.training.annotation.aspect;
+
+import org.springframework.aop.aspectj.annotation.*;
+import org.springframework.aop.aspectj.*;
+
+@Aspect
+public class MyAspect {
+
+  @Pointcut(value="execution(public * *(..))")
+  public void anyPublicMethod() { }
+
+  @Around("anyPublicMethod() && @annotation(myAnnotation)")
+  public Object process(ProceedingJoinPoint jointPoint, MyAnnotation myAnnotation) throws Throwable {
+    System.out.println("In AOP process");
+    return 5; //jointPoint.proceed();
+  }
+}
