@@ -17,6 +17,8 @@ public class ApplicationTest {
 	public void setup(){
 		context = new ClassPathXmlApplicationContext("spring-config.xml");
 	}
+	
+	
 	@Test
 	public void test() {
 		  
@@ -29,7 +31,7 @@ public class ApplicationTest {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testBeanWithConstructor(){
 
 			BeanWithConstructor myBean = (BeanWithConstructor) context.getBean("myBean");
