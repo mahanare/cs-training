@@ -20,7 +20,7 @@ public class Application {
 	@Autowired
 	@Qualifier("world")
 	private HelloWorld world;
-	@Value("hari")
+	@Value("${name}")
 	private String name;
 	
 
@@ -36,6 +36,7 @@ public class Application {
 	public void startApplication(){
 	//	world = new HelloWorldImpl();
 		this.world.sayHello();
+		System.out.println("Name injected from property file is :" + name);
 	}
 
 }
