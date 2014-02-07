@@ -7,6 +7,11 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * for AOP sample, please read http://www.mkyong.com/spring/spring-aop-examples-advice/
+ * @author harinath
+ *
+ */
 public class ApplicationTest {
 	
 	private ApplicationContext  context;
