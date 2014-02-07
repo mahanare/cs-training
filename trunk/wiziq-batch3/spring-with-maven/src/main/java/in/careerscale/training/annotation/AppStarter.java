@@ -14,21 +14,14 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
 @Nonnull
-public class AppStarter {
+public  class AppStarter {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(AppStarter.class);
 
-	public static void main(String[] args) {
-		LOGGER.info("Starting up...");
-		try (AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
-				Config.class)) {
-			//LOGGER.info(context.getBean(App.class).getMessage());
-		}
-	}
 
 	@Configuration
 	@ComponentScan(basePackages = { "in.careerscale.training.annotation" })
-	@ImportResource(value = "classpath:aop.xml")
+	//@ImportResource(value = "classpath:aop.xml")
 	public static class Config {
 		
 		@Bean
@@ -46,4 +39,17 @@ public class AppStarter {
 		
 		
 	}
+	
+	/**
+	 * 
+
+
+	public static void main(String[] args) {
+		LOGGER.info("Starting up...");
+		try (AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
+				Config.class)) {
+			//LOGGER.info(context.getBean(App.class).getMessage());
+		}
+	}
+	 */
 }

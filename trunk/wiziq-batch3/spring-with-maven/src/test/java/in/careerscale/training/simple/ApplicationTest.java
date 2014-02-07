@@ -11,8 +11,6 @@ public class ApplicationTest {
 	
 	private ApplicationContext  context;
 	
-
-	
 	@Before
 	public void setup(){
 		context = new ClassPathXmlApplicationContext("spring-config.xml");
@@ -25,20 +23,14 @@ public class ApplicationTest {
 		
 		Application application = (Application) context.getBean("application");
 		application.startApplication();
-		
-		
-		
-		
+				
 	}
 	
-	//@Test
+	@Test
 	public void testBeanWithConstructor(){
 
 			BeanWithConstructor myBean = (BeanWithConstructor) context.getBean("myBean");
 			myBean.displayData();
-			
-			
-		
 	}
 
 }

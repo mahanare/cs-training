@@ -3,7 +3,7 @@ package in.careerscale.training.annotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("world1")
+@Component("world")
 public class HelloWorldImpl implements HelloWorld {
 
 	
