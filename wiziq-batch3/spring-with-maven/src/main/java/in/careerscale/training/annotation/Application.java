@@ -9,14 +9,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-@Component
+
 //@Repository
 //@Service
 //@Controller
+
+@Component
 public class Application {
 	
 	@Autowired
-	@Qualifier("world1")
+	@Qualifier("world")
 	private HelloWorld world;
 	@Value("hari")
 	private String name;

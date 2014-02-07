@@ -24,8 +24,6 @@ public class AppTest {
 	private Application application;
 	
 	
-
-	
 	@Test
 	public void test() {
 		  

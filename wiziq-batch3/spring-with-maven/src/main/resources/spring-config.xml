@@ -5,13 +5,13 @@
                            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context-3.2.xsd">
-
+	<context:property-placeholder location="classpath:application.properties" />
 	<bean id="helloWorld" class="in.careerscale.training.simple.HelloWorldImpl">
-	 <property name="myBean" ref="myBean"></property>
+		<property name="myBean" ref="myBean"></property>
 
 	</bean>
 
-	<bean id="application" class="in.careerscale.training.simple.Application" >
+	<bean id="application" class="in.careerscale.training.simple.Application">
 		<property name="world" ref="helloWorld"></property>
 		<property name="name" value="Harinath"></property>
 	</bean>
@@ -24,12 +24,12 @@
 		<constructor-arg>
 			<value>12</value>
 		</constructor-arg>
-		
+
 		<constructor-arg>
 			<ref bean="helloWorld"></ref>
 		</constructor-arg>
+
 	</bean>
-	
-	
+
 
 </beans>
