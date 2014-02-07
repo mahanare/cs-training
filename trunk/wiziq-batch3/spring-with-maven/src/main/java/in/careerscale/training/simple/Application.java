@@ -17,6 +17,7 @@ public class Application {
 	public void startApplication(){
 	//	world = new HelloWorldImpl();
 		this.world.sayHello();
+		System.out.println("injected name property value from application.properties is : " + name);
 	}
 
 }
