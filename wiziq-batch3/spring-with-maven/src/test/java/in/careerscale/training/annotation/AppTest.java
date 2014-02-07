@@ -13,6 +13,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
+/**
+ * for AOP sample, please read http://www.mkyong.com/spring/spring-aop-examples-advice/
+ * @author harinath
+ *
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=Config.class,loader=AnnotationConfigContextLoader.class)
 @Nonnull
