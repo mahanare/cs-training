@@ -10,5 +10,9 @@
 	<bean id="userSpringAction" class="in.careerscale.training.struts2.user.action.UserSpringAction">
 		<property name="userBo" ref="userBo" />	
 	</bean>
+	
+	<bean id="registerAction" class="in.careerscale.training.struts2.user.action.RegisterAction">
+		
+	</bean>
  
 </beans>

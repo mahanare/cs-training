@@ -43,7 +43,7 @@ public class CustomFilter implements Filter {
 		// pass the request along the filter chain
 		System.out.println("within filter");
 		HttpServletResponse httpResponse = (HttpServletResponse) response;
-		httpResponse.sendRedirect("http://google.com");
+		//httpResponse.sendRedirect("http://google.com");
 		//chain.doFilter(request, response);
 	}
 

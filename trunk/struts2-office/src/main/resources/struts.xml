@@ -18,6 +18,26 @@
 			<result name="success">pages/user.jsp</result>
 		</action>
 		
+		
+			<action name="registerForm" 
+			 >
+			<result name="success">pages/register.jsp</result>
+		</action>
+		
+			<action name="registerAction" 
+			class="registerAction" >
+			<result name="success">pages/success.jsp</result>
+				<result name="error">pages/error.jsp</result>
+		</action>
+		
+			<action name="search" 
+			 >
+			<result name="success">pages/success.jsp</result>
+		</action>
+		
+		
+		
+		
 	</package>
 	
 	
