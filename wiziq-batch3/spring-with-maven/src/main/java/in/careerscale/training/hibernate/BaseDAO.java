@@ -16,6 +16,32 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 
+/**
+ * 
+
+HQL
+
+JPA
+
+Transaction management
+
+Caching, 1st level cache, 2nd level cache
+
+native queries
+
+advance topic:
+Inheritance implementation with hibernate.
+
+
+spring integration
+
+some details about 1 to many and many to many mappings how it works.
+
+annnotations how they work, and may be specific annotations.
+
+
+
+ */
 
 
 /**
