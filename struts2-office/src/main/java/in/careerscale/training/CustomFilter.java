@@ -18,7 +18,7 @@ import org.springframework.http.HttpOutputMessage;
  * Servlet Filter implementation class CustomFilter
  */
 public class CustomFilter implements Filter {
-
+      
     /**
      * Default constructor. 
      */
@@ -44,7 +44,7 @@ public class CustomFilter implements Filter {
 		System.out.println("within filter");
 		HttpServletResponse httpResponse = (HttpServletResponse) response;
 		//httpResponse.sendRedirect("http://google.com");
-		//chain.doFilter(request, response);
+		chain.doFilter(request, response);
 	}
 
 	/**
