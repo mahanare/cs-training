@@ -1,3 +1,4 @@
+#labels training
 Training instructions
 
 = Introduction =
@@ -13,5 +14,3 @@ http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html
 
 Sublime text
 http://www.sublimetext.com/2
-
-
