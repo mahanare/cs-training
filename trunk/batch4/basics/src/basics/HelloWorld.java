@@ -20,4 +20,9 @@ public class HelloWorld {
 	{
 		System.out.println("Good Morning");
 	}
+	
+	public void goodNight()
+	{
+		System.out.println("GoodNight");
+	}
 }
