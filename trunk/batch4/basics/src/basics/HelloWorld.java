@@ -16,5 +16,8 @@ public class HelloWorld {
 		System.out.println("Hi");
 	}
 	
-	
+	public void goodMorning()
+	{
+		System.out.println("Good Morning");
+	}
 }
