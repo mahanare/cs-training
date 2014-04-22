@@ -18,8 +18,7 @@ package basics.hari;
  */
 public class Basics  {
 	
-	private int count =10;
-	
+		
 
 	public void sayHello(int age, String name){
 		for(int i=0; i < 10; i++){
