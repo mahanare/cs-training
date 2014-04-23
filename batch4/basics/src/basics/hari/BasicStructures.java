@@ -66,7 +66,6 @@ public class BasicStructures {
 		
 		//i++ equal to i = i + 1
 		//for( initialization; termination; increment condition)
-		
 
 		for (int i = 0; i < 10; i++) {
 			if(i == 5)
