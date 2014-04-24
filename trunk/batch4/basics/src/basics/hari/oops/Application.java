@@ -15,6 +15,11 @@ public class Application {
 		
 		HelloWorld world3 = new HelloWorld();
 		System.out.println(world3.sayHello("Nitya"));
+		
+		
+		AccessSpecifierDemo demo = new AccessSpecifierDemo();
+		demo.name="hari";
+		demo.city="Hyderabad";
 
 	}
 
