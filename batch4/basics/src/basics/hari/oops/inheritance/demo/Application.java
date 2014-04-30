@@ -1,5 +1,6 @@
 package basics.hari.oops.inheritance.demo;
 
+import basics.hari.oops.inheritance.AbsHelloWorld;
 import basics.hari.oops.inheritance.Parent;
 import basics.hari.oops.inheritance.child.Child;
 
@@ -26,6 +27,8 @@ public class Application {
 		p1.sayHello();
 	
 		
+		
+		//AbsHelloWorld world = new AbsHelloWorld();
 		
 
 	}
