@@ -12,8 +12,18 @@ public final class FinalClassDemo {
 	FinalClassDemo(){
 		number =100;
 	}
-	public void sayHello(){
-		System.out.println("Hello");
+	
+	FinalClassDemo(int number){
+		this();
+		String name="hari";
+		sayHello(name);
+	}
+	public void sayHello(final String name){
+		System.out.println("Hello, " + name);
+		//name="harsha";
 
 	}
+	
+	
+	
 }
