@@ -17,5 +17,12 @@ public class Child extends Parent {
 	public void sayGoodMorning(){
 		System.out.println("Good morning");
 	}
+	
+	/*
+	public  void sayFinalHello(){
+		System.out.println("hello finally, no overriding here");
+	}
+	
+	*/
 
 }
