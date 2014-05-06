@@ -8,11 +8,13 @@ import basics.hari.oops.inheritance.child.HelloWorldImpl;
 
 public class Application {
 	
-	public void basicInheritanceDemo(){
+	
+	public void basicInheritanceDemo() throws Exception{
 		Child child = new Child();
 		child.sayHello("hari");
 		child.sayHello();
 		child.sayGoodMorning();
+		
 		
 		
 		((Parent)child).sayHello();
@@ -37,12 +39,14 @@ public class Application {
 	
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 
 	  Application app = new Application();
 	  app.inheritanceDemo();
+		app.basicInheritanceDemo();
 		
+		System.out.println("this never gets executed");
 		
 		//AbsHelloWorld world = new AbsHelloWorld();
 		

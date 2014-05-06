@@ -14,8 +14,9 @@ public class Child extends Parent {
 	}
 	
 	
-	public void sayGoodMorning(){
+	public void sayGoodMorning() throws Exception{
 		System.out.println("Good morning");
+		throw new Exception("test");
 	}
 	
 	/*
