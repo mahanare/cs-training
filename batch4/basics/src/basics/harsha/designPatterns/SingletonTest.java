@@ -10,7 +10,12 @@ public class SingletonTest {
 	@Test
 	public void testSingleton() {
 		SingletonExample s = SingletonExample.getInstance();
-		assertEquals(s, s);
+		SingletonExample s1 = SingletonExample.getInstance();
+		SingletonExample s2 = SingletonExample.getInstance();
+		
+		assertEquals(s, s1);
+		assertEquals(s1, s2);
+		assertEquals(s, s2);
 	}
 
 }
