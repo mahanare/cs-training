@@ -1,6 +1,6 @@
 package basics.nitya.inheritance;
 
-public class HelloWorld {
+public interface HelloWorld {
 	
 	void sayHello();
 	void sayHi();

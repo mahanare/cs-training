@@ -47,11 +47,15 @@ public class ExceptionsTest {
 			}
 			System.out
 					.println("This is after exception and this never gets executed");
+			
+			
+			//you can do clean up here, but in case of exception it may not get executed.
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		finally{
+			//so we do clean up work here like closing file or JDBC connection or anything of that sort.
 			System.out.println("This gets executed irrespective of the fact that exception happens or not");
 		}
 
@@ -92,6 +96,12 @@ public class ExceptionsTest {
 		throw new RuntimeException("this is sample exception");
 		// System.out.println("This is after exception and this never gets executed");
 
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
 	}
 
 }

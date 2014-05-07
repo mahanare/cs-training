@@ -8,6 +8,7 @@ import basics.hari.oops.inheritance.child.HelloWorldImpl;
 
 public class Application {
 	
+	private Parent p;
 	
 	public void basicInheritanceDemo() throws Exception{
 		Child child = new Child();
