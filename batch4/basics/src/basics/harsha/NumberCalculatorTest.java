@@ -22,8 +22,7 @@ public class NumberCalculatorTest {
 	public void testMultiply() throws NumberException { 
 		assertEquals(0,NumberCalculator.multiplyPositive(0, 10));
 	}
-
-	//how should i be testing the below two functions
+	
 	@Test
 	public void testDivide() { 
 		double result = NumberCalculator.divide(1, 10);
@@ -36,10 +35,11 @@ public class NumberCalculatorTest {
 		//assertEquals(error,);
 	}
 	
+	//how to pass this test
 	@Test(expected=DenominatorZeroException.class)
-	public void testDividebyPositiveByZero() { 
+	public void testDividebyPositiveByZero()  { 
 		double result = NumberCalculator.dividePositive(10, 0);
 		//assertEquals(Double.POSITIVE_INFINITY, result,0.000);
-		fail("exception should have occurred before this line");
+		
 	}
 }
