@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import basics.harsha.Exceptions.DenominatorZeroException;
+import basics.harsha.Exceptions.NumberException;
+
 public class NumberCalculatorTest {
 
 	@Test
@@ -16,8 +19,8 @@ public class NumberCalculatorTest {
 		assertEquals(-2,NumberCalculator.subtract(3, 5));
 	}
 	@Test
-	public void testMultiply() { 
-		assertEquals(0,NumberCalculator.multiply(0, 10));
+	public void testMultiply() throws NumberException { 
+		assertEquals(0,NumberCalculator.multiplyPositive(0, 10));
 	}
 
 	//how should i be testing the below two functions
@@ -33,16 +36,10 @@ public class NumberCalculatorTest {
 		//assertEquals(error,);
 	}
 	
-	@Test(expected=ArithmeticException.class)
-	public void testDividebyZeroForIntegers() { 
-		try{
-		int result = 10/0;
-		fail("exception should have occurred before this line");
-		}
-		catch(ArithmeticException ae){
-			
-		}
+	@Test(expected=DenominatorZeroException.class)
+	public void testDividebyPositiveByZero() { 
+		double result = NumberCalculator.dividePositive(10, 0);
 		//assertEquals(Double.POSITIVE_INFINITY, result,0.000);
-		//assertEquals(error,);
+		fail("exception should have occurred before this line");
 	}
 }
