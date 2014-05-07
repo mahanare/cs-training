@@ -17,9 +17,9 @@ public class NumberCalculator {
 		return result;
 	}
 
-	public static int multiplyPositive(int num1, int num2) throws NumberException {
-		if(num1<0 || num2<0)
-		{
+	public static int multiplyPositive(int num1, int num2)
+			throws NumberException {
+		if (num1 < 0 || num2 < 0) {
 			NumberException e1 = new NumberException();
 			throw e1;
 		}
@@ -33,33 +33,26 @@ public class NumberCalculator {
 	}
 
 	public static double dividePositive(double num1, double num2) {
-		double result=0;
-			try{
-				if(num1<0 || num2<0)
-				{
-				throw new  NumberException();
-				}
-				else if(num2==0)
-				{
-					throw new DenominatorZeroException(num2);
-				}
-			} catch (NumberException e) {
-				e.printStackTrace();
-			} 
-			catch (DenominatorZeroException e) {
-				e.printStackTrace();
-			} 
-			finally
-			{
-				result = num1 / num2;
+		double result = 0;
+		try {
+			if (num1 < 0 || num2 < 0) {
+				throw new NumberException();
+			} else if (num2 == 0) {
+				throw new DenominatorZeroException(num2);
 			}
-		
-			
-		
+		} catch (NumberException e) {
+			e.printStackTrace();
+		} catch (DenominatorZeroException e) {
+			e.printStackTrace();
+		} finally {
+			result = num1 / num2;
+		}
+
 		return result;
 	}
+
 	public static void main(String[] args) {
-		
+
 		System.out.println("Choose an operation: ");
 		System.out.println("1. Add");
 		System.out.println("2. Subtract");
@@ -90,23 +83,22 @@ public class NumberCalculator {
 			} catch (NumberException e) {
 				e.printStackTrace();
 			}
-			
+
 			break;
 		case 4:
 			double division = divide(a, b);
 			System.out.println("Division is " + division);
 			break;
-			
+
 		case 5:
 			double divisionPositive = dividePositive(a, b);
 			System.out.println("Division is " + divisionPositive);
 			break;
-			
-			
+
 		default:
-				System.out.println("Invalid Case");
-				break;
-		
+			System.out.println("Invalid Case");
+			break;
+
 		}
 
 		sc.close();
