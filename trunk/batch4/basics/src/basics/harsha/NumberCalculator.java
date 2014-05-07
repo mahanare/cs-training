@@ -2,6 +2,9 @@ package basics.harsha;
 
 import java.util.Scanner;
 
+import basics.harsha.Exceptions.DenominatorZeroException;
+import basics.harsha.Exceptions.NumberException;
+
 public class NumberCalculator {
 
 	public static int add(int num1, int num2) {
@@ -14,7 +17,12 @@ public class NumberCalculator {
 		return result;
 	}
 
-	public static int multiply(int num1, int num2) {
+	public static int multiplyPositive(int num1, int num2) throws NumberException {
+		if(num1<0 || num2<0)
+		{
+			NumberException e1 = new NumberException();
+			throw e1;
+		}
 		int result = num1 * num2;
 		return result;
 	}
@@ -24,6 +32,32 @@ public class NumberCalculator {
 		return result;
 	}
 
+	public static double dividePositive(double num1, double num2) {
+		double result=0;
+			try{
+				if(num1<0 || num2<0)
+				{
+				throw new  NumberException();
+				}
+				else if(num2==0)
+				{
+					throw new DenominatorZeroException(num2);
+				}
+			} catch (NumberException e) {
+				e.printStackTrace();
+			} 
+			catch (DenominatorZeroException e) {
+				e.printStackTrace();
+			} 
+			finally
+			{
+				result = num1 / num2;
+			}
+		
+			
+		
+		return result;
+	}
 	public static void main(String[] args) {
 		
 		System.out.println("Choose an operation: ");
@@ -31,6 +65,7 @@ public class NumberCalculator {
 		System.out.println("2. Subtract");
 		System.out.println("3. Multiply");
 		System.out.println("4. Divide");
+		System.out.println("5. Divide Positive");
 
 		Scanner sc = new Scanner(System.in);
 		int choice = sc.nextInt();
@@ -48,13 +83,26 @@ public class NumberCalculator {
 			System.out.println("Diffence is " + diff);
 			break;
 		case 3:
-			int product = multiply(a, b);
-			System.out.println("Sum is " + product);
+			int product;
+			try {
+				product = multiplyPositive(a, b);
+				System.out.println("Product is " + product);
+			} catch (NumberException e) {
+				e.printStackTrace();
+			}
+			
 			break;
 		case 4:
 			double division = divide(a, b);
 			System.out.println("Division is " + division);
 			break;
+			
+		case 5:
+			double divisionPositive = dividePositive(a, b);
+			System.out.println("Division is " + divisionPositive);
+			break;
+			
+			
 		default:
 				System.out.println("Invalid Case");
 				break;
