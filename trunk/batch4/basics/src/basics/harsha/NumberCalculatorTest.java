@@ -39,7 +39,7 @@ public class NumberCalculatorTest {
 
 	// how to pass this test
 	@Test(expected = DenominatorZeroException.class)
-	public void testDividebyPositiveByZero() {
+	public void testDividebyPositiveByZero() throws DenominatorZeroException, NumberException {
 		double result = NumberCalculator.dividePositive(10, 0);
 		// assertEquals(Double.POSITIVE_INFINITY, result,0.000);
 

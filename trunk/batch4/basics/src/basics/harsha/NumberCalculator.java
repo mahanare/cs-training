@@ -32,9 +32,9 @@ public class NumberCalculator {
 		return result;
 	}
 
-	public static double dividePositive(double num1, double num2) {
+	public static double dividePositive(double num1, double num2) throws DenominatorZeroException, NumberException {
 		double result = 0;
-		try {
+	try {
 			if (num1 < 0 || num2 < 0) {
 				throw new NumberException();
 			} else if (num2 == 0) {
@@ -44,6 +44,7 @@ public class NumberCalculator {
 			e.printStackTrace();
 		} catch (DenominatorZeroException e) {
 			e.printStackTrace();
+			throw e;
 		} finally {
 			result = num1 / num2;
 		}
@@ -51,7 +52,7 @@ public class NumberCalculator {
 		return result;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws DenominatorZeroException, NumberException {
 
 		System.out.println("Choose an operation: ");
 		System.out.println("1. Add");
