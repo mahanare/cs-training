@@ -12,7 +12,7 @@ package basics.hari.inner;
  */
 
 // Outer class
-public class InnerClassDemo {
+public class OuterClass {
 
 	private int outerId = 100;
 
@@ -65,6 +65,7 @@ public class InnerClassDemo {
 		};
 
 		world.sayHello();
+		
 		world = new HelloWorld() {
 
 			@Override
@@ -81,7 +82,7 @@ public class InnerClassDemo {
 
 	public static void main(String[] args) {
 
-		InnerClassDemo demo = new InnerClassDemo();
+		OuterClass demo = new OuterClass();
 		demo.sayHello();
 
 		InnerClass innerObject = demo.new InnerClass();

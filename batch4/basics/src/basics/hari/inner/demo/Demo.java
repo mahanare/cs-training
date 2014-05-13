@@ -1,6 +1,6 @@
 package basics.hari.inner.demo;
 
-import basics.hari.inner.InnerClassDemo.StaticInnerClass;
+import basics.hari.inner.OuterClass.StaticInnerClass;
 
 
 
