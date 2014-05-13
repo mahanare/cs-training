@@ -13,7 +13,8 @@ public class Thread1 extends Thread {
 	@Override
 	public void run() {
 		synchronized (shared1) {
-			
+			synchronized (shared2) {
+				shared2.displayNumbers(id);
 			shared1.displayNumbers(id);
 			try {
 				//shared1.wait();
@@ -22,12 +23,12 @@ public class Thread1 extends Thread {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
 			//shared1.notifyAll();
-			synchronized (shared2) {
-				shared2.displayNumbers(id);
+			
 		
 		}
+		}
+			
 		
 		
 	}

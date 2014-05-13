@@ -15,24 +15,23 @@ public class Thread2 extends Thread {
 	@Override
 	public void run() {
 		
-		synchronized (shared1) {
-			shared1.displayNumbers(id);
+		synchronized (shared2) {
+			
+			synchronized (shared1) {
+				shared1.displayNumbers(id);
+				
+			shared2.displayNumbers(id);
 			try {
 				//shared1.wait();
 				sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-		}
 			//shared2.notifyAll();
-			synchronized (shared2) {
-				shared2.displayNumbers(id);
-				
-			}
+			
 		}
-	
-		
-	
+		}
+	}
 		
 	
 }
