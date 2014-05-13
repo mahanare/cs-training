@@ -11,8 +11,12 @@ public class Demo {
 		Thread2 thread2 = new Thread2(2,shared1, shared2);
 		
 		thread1.start();
-		thread1.interrupt();
+	
 		thread2.start();
+		
+		//thread1.interrupt();
+		
+		
 		//System.out.println(thread1.id);
 		//System.out.println(thread1.isAlive());
 	}
