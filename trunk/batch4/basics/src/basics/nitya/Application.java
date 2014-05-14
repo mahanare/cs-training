@@ -8,6 +8,9 @@ public class Application {
 		
 		HelloWorld hello1 = new HelloWorld();
 		System.out.println(hello1.sayDay(27));
+		
+		HelloWorld hello2 = new HelloWorld();
+		System.out.println(hello2.sayMonth(7));
 
 	}
 
