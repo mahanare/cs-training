@@ -16,7 +16,7 @@ public class HelloWorld {
 	}
 	
 	public String sayMonth(int d){
-		return "sayDay" + d;
+		return "sayMonth" + d;
 		}
 
 	
