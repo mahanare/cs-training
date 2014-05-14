@@ -14,6 +14,10 @@ public class HelloWorld {
 	public String sayDay(int d){
 	return "sayDay" + d;
 	}
+	
+	public String sayMonth(int d){
+		return "sayDay" + d;
+		}
 
 	
 }
