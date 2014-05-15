@@ -1,4 +1,4 @@
-package harsha.baiscs.threads.deadlock;
+package basics.harsha.threads;
 
 public class Thread1 extends Thread {
 	int id;
