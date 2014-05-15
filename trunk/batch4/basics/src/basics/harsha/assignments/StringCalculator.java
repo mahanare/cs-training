@@ -1,4 +1,4 @@
-package basics.harsha;
+package basics.harsha.assignments;
 
 import java.util.Scanner;
 
