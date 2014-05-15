@@ -1,6 +1,6 @@
-package basics.harsha;
+package basics.harsha.assignments;
 
-import basics.harsha.AccessDemo;
+import basics.harsha.assignments.AccessDemo;
 import basics.hari.oops.HelloWorld;
 
 public class AccessApp {
