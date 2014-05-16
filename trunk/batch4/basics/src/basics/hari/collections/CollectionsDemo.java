@@ -1,9 +1,12 @@
 package basics.hari.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 
@@ -84,6 +87,47 @@ public class CollectionsDemo {
 		
 	}
 
+	public void setDemo(){
+		
+		Set<Integer> numbers = new HashSet<Integer>();
+		
+		numbers.add(10);
+		numbers.add(20);
+		numbers.add(10);
+		
+		System.out.println("size of set is " + numbers.size());
+
+	}
+	
+	public void MapDemo(){
+		
+		Map<String, Integer> myMap = new HashMap<String, Integer>();
+		
+		myMap.put("Nitya", 100);
+		myMap.put("Harsha", 99);
+		myMap.put("hari", 100);
+		myMap.put("Nitya", 70);
+		Set<Entry<String, Integer>> myEntry = myMap.entrySet();
+		
+		
+		Iterator<Entry<String, Integer>> iterator = myEntry.iterator();
+		
+		while(iterator.hasNext()){
+			
+			Entry<String, Integer> entry = iterator.next();
+			entry.getValue();
+			entry.getKey();
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+	
 	
 	public static void main(String[] args) {
 		
