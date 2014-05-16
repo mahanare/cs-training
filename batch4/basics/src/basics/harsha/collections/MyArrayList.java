@@ -1,7 +1,5 @@
 package basics.harsha.collections;
 
-import java.util.*;
-
 public class MyArrayList<T> {
 	
 	 int capacity = 5;
