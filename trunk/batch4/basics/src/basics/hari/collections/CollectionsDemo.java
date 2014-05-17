@@ -120,12 +120,6 @@ public class CollectionsDemo {
 			
 		}
 		
-		
-		
-		
-		
-		
-		
 	}
 	
 	
