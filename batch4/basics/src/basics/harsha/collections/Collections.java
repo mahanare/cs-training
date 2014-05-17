@@ -11,7 +11,7 @@ public class Collections {
 	{
 		setRetainAllExample();
 		System.out.println("==============================");
-		listRetainAllExample();
+	//	listRetainAllExample();
 		System.out.println("==============================");
 		listIteratorExample();
 	}
