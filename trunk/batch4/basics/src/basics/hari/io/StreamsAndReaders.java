@@ -30,6 +30,7 @@ public class StreamsAndReaders {
 		char[] inputArray = new char[10];
 		System.out.println("Enter some characters");
 		reader.read(inputArray);
+	
 		System.out.println("You have entered :" + new String(inputArray));
 
 	}
@@ -49,18 +50,20 @@ public class StreamsAndReaders {
 		char charData =in.readChar();
 		//in.readInt();
 		int number = in.readInt();
+	
 		 
 		System.out.println("char data ::" + charData  + "  :: number  " + number);
 		
 	}
 	
 	
-	public void fileReadingemo() throws IOException{
+	public void fileReadingDemo() throws IOException{
 		
 		FileInputStream fio = new FileInputStream("test.dat");
 		
 		InputStreamReader ir = new InputStreamReader(fio);
 		BufferedReader br = new BufferedReader(ir);
+		//BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("test.dat")));
 		String line =null;
 		boolean eof = false;
 		while(!eof){
@@ -108,12 +111,12 @@ public class StreamsAndReaders {
 		StreamsAndReaders reader = new StreamsAndReaders();
 		
 //	reader.dataInputStreamDemo();
-   reader.readStream();
+//   reader.readStream();
 	//	reader.inputReaderDemo();
 	//	reader.bufferedReaderDemo();
 
 	//	reader.fileWritingDemo();
-	//	reader.fileReadingemo();
+		reader.fileReadingDemo();
 		
 	}
 
