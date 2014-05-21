@@ -16,7 +16,7 @@ public class AccessDemoApplication {
 		
 		HelloWorld prasannaWorld = new HelloWorld();
 		
-		basics.harsha.HelloWorld harshaWorld = new basics.harsha.HelloWorld();
+		//basics.harsha.HelloWorld harshaWorld = new basics.harsha.HelloWorld();
 
 	}
 
