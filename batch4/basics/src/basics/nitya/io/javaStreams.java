@@ -3,7 +3,9 @@ package basics.nitya.io;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,9 +42,26 @@ public class javaStreams {
 	
 	public void dataInputstreamDemo() throws IOException{
 		
-		System.out.println("enter char and number");
+		System.out.println("enter char");
 		DataInputStream input = new DataInputStream(System.in);
 		char inputData=input.readChar();
+		System.out.println("enter number");
+		int number= input.readInt();
+		System.out.println("You entered the chars::" + inputData +"::number"+number);	
+	}
+	
+	
+public void dataInputStreamDemoWithFile() throws IOException{
+		
+		DataOutputStream out = new DataOutputStream(new FileOutputStream("dataTest.dat"));
+		out.writeChar('H');
+		out.writeInt(50);
+		
+		
+		System.out.println("enter char");
+		DataInputStream input = new DataInputStream(new FileInputStream("dataTest.dat"));
+		char inputData=input.readChar();
+		System.out.println("enter number");
 		int number= input.readInt();
 		System.out.println("You entered the chars::" + inputData +"::number"+number);	
 	}
@@ -84,7 +103,7 @@ public static void main(String[] args) throws IOException {
 	//js.FileReadingDemo();
 	//js.fileWritingDemo();
 	//js.inputReaderDemo();
-	js.dataInputstreamDemo();
+	js.dataInputStreamDemoWithFile();
 	
 	//Scanner sc=new Scanner(System.in);
 	//System.out.println(sc.nextLine());
