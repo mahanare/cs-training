@@ -31,12 +31,13 @@ public class JDBCDemo {
 		while(resultSet.next()){
 			System.out.println(resultSet.getString(1) +"  " + resultSet.getString(2));
 		}
-		
+		/**
 		while(true){
 			myConnections.add(DriverManager.getConnection("jdbc:mysql://localhost:3306/office","root", "secret"));
 			System.out.println("Connections opened so far : " +myConnections.size());
 		}
 		
+		**/
 		
 		
 
