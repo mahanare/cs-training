@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,11 +57,15 @@ public class JDBCDemo {
 		con.close();	
 	}
 	
-	/*public void getFirstNameWithCallableStatement() throws SQLException{
+	/*public void getFirstNameWithCallableStatement(String first) throws SQLException{
 		
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/office","root", ""); 
 		CallableStatement stmt = con.prepareCall("call getfirst(?,?)");
-		
+		stmt.setString(207, "first");
+		stmt.registerOutParameter(1, Types.VARCHAR);
+		stmt.execute();
+		String firstName =stmt.getString("nr");
+		System.out.println("firstname is " + firstName);
 	}*/
 	
 	public static void main(String[] args) throws SQLException{
@@ -70,7 +75,8 @@ public class JDBCDemo {
 			//app.getRegistrationDet();
 			//app.insertIntoRegistrationDet(205,"neethu");
 			//app.insertIntoRegistrationDet(209,"ram");
-			app.updateRegistrationDet();
+			//app.updateRegistrationDet();
+			//app.getFirstNameWithCallableStatement("nr");
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
