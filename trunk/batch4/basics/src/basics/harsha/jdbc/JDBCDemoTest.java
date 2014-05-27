@@ -50,4 +50,11 @@ public class JDBCDemoTest {
 		assertEquals(1,result);
 	}
 
+	@Test
+	public void testGetCountOfEmployeesFromDepartment() throws SQLException {
+		JDBCDemo jd = new JDBCDemo();
+		int result = jd.getCountOfEmployeesFromDepartment("production");
+		assertEquals(1,result);
+	}
+
 }
