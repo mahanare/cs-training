@@ -151,6 +151,18 @@ public class JDBCApplication {
 		System.out.println("department name is " + deptName);
 		
 	}
+	
+	public void batchInsertDemo() throws SQLException{
+		Connection con = getConnection();
+		Statement stmt = con.createStatement();
+		stmt.addBatch("insert into department(name) values('department1')");
+		stmt.addBatch("insert into department(name) values('department2')");
+		stmt.addBatch("insert into department(name) values('department3')");
+		
+		int[] result = stmt.executeBatch();
+		System.out.println(result);
+		
+	}
 
 	/**
 	 * @param args
@@ -163,7 +175,8 @@ public class JDBCApplication {
 			//application.updateEmployee();
 			//application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
 			//application.getEmployees();
-			application.getDeptNameWithCallableStatement(2);
+			//application.getDeptNameWithCallableStatement(2);
+			application.batchInsertDemo();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
