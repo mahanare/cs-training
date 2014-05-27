@@ -31,7 +31,8 @@ Connection URL:    "jdbc:oracle:thin:@<hostname>:<port>:<sid>", "<user>", "<pass
  */
 public class JDBCApplication {
 	private static final String conString = "jdbc:mysql://localhost:3306/office";
-
+	//private static final String conString = "jdbc:odbc:office-odbc";
+	
 	
 	private Connection getConnection() throws SQLException {
 		
@@ -154,13 +155,19 @@ public class JDBCApplication {
 	
 	public void batchInsertDemo() throws SQLException{
 		Connection con = getConnection();
+		con.setAutoCommit(false);
+		
 		Statement stmt = con.createStatement();
-		stmt.addBatch("insert into department(name) values('department1')");
-		stmt.addBatch("insert into department(name) values('department2')");
-		stmt.addBatch("insert into department(name) values('department3')");
+		stmt.addBatch("insert into department(name) values('department7')");
+		stmt.addBatch("insert into department(name) values('department8')");
+		stmt.addBatch("insert into department(name) values('department9')");
 		
 		int[] result = stmt.executeBatch();
 		System.out.println(result);
+		
+	     con.commit();
+	
+		//con.rollback();
 		
 	}
 
