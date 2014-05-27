@@ -149,5 +149,19 @@ public class JDBCDemo {
 		return result;
 
 	}
+	
+	public int getCountOfEmployeesFromDepartment(String deptName) throws SQLException
+	{
+		Connection con = JDBCConnection.getConncetion();
+		CallableStatement stmt = con.prepareCall("call getCountEmployeesFromDepartment(?,?)");
+		
+		stmt.setString(1, deptName);
+		stmt.registerOutParameter(2, Types.INTEGER);
+		stmt.execute();
+		
+		int count = stmt.getInt(2);
+		System.out.println("the number of employees is "+ count);
+		return count;
+	}
 
 }
