@@ -66,13 +66,13 @@ public class JDBCDemo {
 		stmt.execute();
 		String firstName =stmt.getString("nr");
 		System.out.println("firstname is " + firstName);
-	}*/
-	
+	}
+	*/
 	public static void main(String[] args) throws SQLException{
 		
 		JDBCDemo app = new JDBCDemo();
 		try{
-			//app.getRegistrationDet();
+			app.getRegistrationDet();
 			//app.insertIntoRegistrationDet(205,"neethu");
 			//app.insertIntoRegistrationDet(209,"ram");
 			//app.updateRegistrationDet();
