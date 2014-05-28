@@ -57,17 +57,17 @@ public class JDBCDemo {
 		con.close();	
 	}
 	
-	/*public void getFirstNameWithCallableStatement(String first) throws SQLException{
+	public void getFirstNameWithCallableStatement(String first) throws SQLException{
 		
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/office","root", ""); 
 		CallableStatement stmt = con.prepareCall("call getfirst(?,?)");
-		stmt.setString(207, "first");
-		stmt.registerOutParameter(1, Types.VARCHAR);
+		stmt.setString(1, "first");
+		stmt.registerOutParameter(2, Types.VARCHAR);
 		stmt.execute();
-		String firstName =stmt.getString("nr");
+		String firstName =stmt.getString(2);
 		System.out.println("firstname is " + firstName);
 	}
-	*/
+
 	public static void main(String[] args) throws SQLException{
 		
 		JDBCDemo app = new JDBCDemo();
