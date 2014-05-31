@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Java script demo</title>
+<script type="text/javascript">
+
+function sayHello(){
+
+	window.alert('Hello world');
+	
+	alert(window.document.getElementById("myButton").getAttribute("value"));
+	
+	//document.write("this is text from doucment.write");
+	
+	window.document.getElementById("myButton").appendChild(document.createTextNode
+		    ('The man who mistook his wife for a hat'));
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+<input id="myButton" type="button" value="click me" onclick="sayHello()" />
+ 
+
+</body>
+</html>
