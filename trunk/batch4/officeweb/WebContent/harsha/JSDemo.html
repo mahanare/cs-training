@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Java Script Demo</title>
+<script type="text/javascript">
+	function sayHello() {
+		
+		var h = "Harsha";
+		alert(" Hello "+ h);
+
+	}
+	
+	function add()
+	{
+	 var a = Number(document.getElementById("var1"));
+	 var b =  Number(document.getElementById("var2"));
+	 
+	 var c = a+b;
+	 
+	 alert("sum is "+c);
+	 
+	}
+</script>
+
+</head>
+<body>
+<input type = "button" value = "Hello " onclick="sayHello()" /> 
+<br/>
+<br/>
+<input type ="text" id="var1">
++
+<input type ="text" id="var2">
+<input type = "button" value = "Add " onclick="add()" /> 
+
+
+</body>
+</html>
