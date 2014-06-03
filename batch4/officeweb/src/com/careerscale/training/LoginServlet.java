@@ -2,22 +2,25 @@ package com.careerscale.training;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.careerscale.training.dao.EmployeeDAO;
+
 /**
- * Servlet implementation class HelloServlet
+ * Servlet implementation class LoginServlet
  */
-public class HelloServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public HelloServlet() {
+	public LoginServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -28,11 +31,7 @@ public class HelloServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("name"));
-		PrintWriter writer = response.getWriter();
-
-		writer.write("<h2>" + request.getParameter("name") + "</h2>");
-
+		// TODO Auto-generated method stub
 	}
 
 	/**
@@ -41,11 +40,23 @@ public class HelloServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("name"));
 
-		PrintWriter writer = response.getWriter();
+		String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
 
-		writer.write("<h2>" + request.getParameter("name") + "</h2>");
+		EmployeeDAO dao = new EmployeeDAO();
+
+		boolean result;
+		try {
+			result = dao.login(userName, password);
+
+			PrintWriter writer = response.getWriter();
+			writer.append("the login result is " + result);
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
