@@ -1,0 +1,88 @@
+@CHARSET "ISO-8859-1";
+
+
+#container
+	{
+	
+	width: 900px;
+	position: relative;
+	margin-left: 5px;
+	color: #CC3399;
+}
+
+#header {
+	background: #CCFF99;
+	position: absolute;
+	width: 900px;
+	height: 80px;
+	border-width: 3px;
+	border-style: dotted;
+	border-color: red;
+	margin-left: 10px;
+	padding: 10px;
+	font-size: 40px;
+	font-family: cursive;
+	font-style: oblique;
+	color: #663366;
+	position: absolute;
+}
+
+#body {
+	margin-top: 150px;	
+	background: #FFCCCC;
+	position: absolute;
+	margin-left: 10px;
+	width: 500px;
+	height: 300px;
+	border-color: red;
+	border-width: 3px;
+	border-style: double;
+	padding: 20px;
+	font-size: 15px;
+	font-family: inherit;
+	font-style: oblique;
+	color: #996699;
+	position: absolute;
+
+	}
+
+#right-side {
+		margin-top: 150px;
+	
+	background: #66CCCC; 
+	
+	height: 300px;
+	position: absolute;
+	margin-left: 550px;
+	width: 360px;
+	border-color: red;
+	border-width: 3px;
+	border-style: double;
+	padding: 20px;
+	font-size: 15px;
+	font-family: inherit;
+	font-style: oblique;
+	color: #996699;
+	}
+
+table {
+	font-size: 20px;
+	color: red;
+	
+}
+
+body{
+	background-color:#CCFFCC;
+	
+}
+
+p#myPara{
+	
+	color: fuchsia;
+	
+}
+
+
+p.myParaStyle{
+	color:olive;
+}
