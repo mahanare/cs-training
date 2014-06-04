@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<title>Login form</title>
+<link rel="stylesheet" type="text/css" href="css/site.css" />
+
+</head>
+
+<body bgcolor=#CCFFCC>
+	<div id="container">
+		<div id="header">This is Header part with "header" id style in
+			css</div>
+		<div id="body">
+			<form name="loginForm" method="POST" action="login">
+
+				<table>
+					<caption>Enter User Information :</caption>
+					<tr>
+						<td>
+							<!-- <label for="firstname">User Name</label> <input id="username"
+					name="username" value=<%=request.getParameter("username") == null ? "'" : "'" + request.getParameter("firstname") + "'"%> /> -->
+							<label for="username">User Name</label> <input id="username"
+							name="username" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="password">User Name</label> <input
+							id="password" name="password" type="password" /></td>
+					</tr>
+					<tr>
+						<td align="right"><input class="submit" type="submit"
+							name="login" value="Submit    Login" /><br> <input
+							class="submit" type="submit" name="forgotPassword"
+							value="Forgot Password" /></td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+		<div id="right-side">
+			<marquee>this is right side</marquee>
+			<br>
+
+
+
+
+		</div>
+
+	</div>
+</body>
+
+</html>
+
