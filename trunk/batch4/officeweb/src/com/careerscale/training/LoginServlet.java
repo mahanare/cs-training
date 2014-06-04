@@ -48,16 +48,10 @@ public class LoginServlet extends HttpServlet {
 		LoginDAO dao = new LoginDAO();
 
 		boolean result;
-		try {
-			result = dao.login(userName, password);
+		result = dao.login(userName, password);
 
-			PrintWriter writer = response.getWriter();
-			writer.append("the login result is " + result);
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		PrintWriter writer = response.getWriter();
+		writer.append("the login result is " + result);
 
 	}
 
