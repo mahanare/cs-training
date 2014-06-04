@@ -5,14 +5,12 @@
 <title>Login Page</title>
 </head>
 <body>
-<h3 align="center"> Enter User Name: </h3>
-<input type="text" name = "userNameTbx" />
-<br>
-<br>
-<h3 align="center"> Enter Password: </h3>
-<input type="password" name = "passwordTbx"/>
+<form action="http://localhost:8080/officeweb/LoginCheckServlet" method="post" >
+<h3  align ="center"> Enter User Name:  <input type="text" name = "userNameTbx" /></h3>
+<h3 align ="center"> Enter Password:  <input type="password" name = "passwordTbx"/></h3> 
 <br>
 
-
+<div align="center"> <input type="submit" value="Login"/></div>
+</form>
 </body>
 </html>
