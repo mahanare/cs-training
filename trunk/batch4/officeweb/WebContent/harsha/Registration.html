@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+
+<script type="text/javascript">
+	
+
+	
+	
+</script>
+</head>
+<body>
+<h3 align = "center"> Registration Page</h3>
+<form name="input" action="http://localhost:8080/officeweb/RegistrationCheckServlet" method="post" >
+User Name: <input type="text" name="userName"><br><br>
+Password  :  <input type="Password" name="password"><br><br>
+First Name  :  <input type="text" name="fname"><br><br>
+Last Name  :  <input type="text" name="lname"><br><br>
+Birthday : <input type="date" name ="dob"><br><br>
+
+Email ID :  <input type="text" name="email"><br><br>
+
+Select department : 
+<select name = "department" onclick="loadDepartments()"> 
+<option value="1">Sales </option>
+<option value="2">Production</option>
+<option value="3">HR </option>
+<option value="4">Testing </option>
+</select>
+<br><br>
+Select Manager : 
+<select name = "manager"> 
+<option value="1">John </option>
+</select>
+<br><br>
+
+Select Designation : 
+<select name = "designation"> 
+<option value="2">Manager </option>
+<option value="4">Team Leader</option>
+
+</select>
+
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+</body>
+</html>
