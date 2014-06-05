@@ -35,7 +35,6 @@
     <servlet-name>register</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description></description>
     <display-name>LoginCheckServlet</display-name>
@@ -45,5 +44,16 @@
   <servlet-mapping>
     <servlet-name>LoginCheckServlet</servlet-name>
     <url-pattern>/LoginCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletOperations</display-name>
+    <servlet-name>ServletOperations</servlet-name>
+    <servlet-class>com.careerscale.training.ServletOperations</servlet-class>
+   <init-param><param-name>testParam</param-name><param-value>1000</param-value></init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletOperations</servlet-name>
+    <url-pattern>/ServletOperations</url-pattern>
   </servlet-mapping>
 </web-app>
