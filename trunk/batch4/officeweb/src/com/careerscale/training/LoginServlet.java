@@ -60,6 +60,9 @@ public class LoginServlet extends HttpServlet {
 
 		PrintWriter writer = response.getWriter();
 		writer.append("the login result is " + result);
+		if(result){
+			request.getSession().setAttribute("username", userName);
+		}
 
 	}
 
