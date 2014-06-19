@@ -1,7 +1,11 @@
 package in.careerscale.batch4.hibernate;
 
+import java.util.List;
+
+import in.careerscale.batch4.model.Department;
 import in.careerscale.batch4.model.Employee;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -20,11 +24,25 @@ public class HibernateTest {
     	SessionFactory factory = configuration.buildSessionFactory(builder.build());
     	Session session = factory.openSession();
     	Employee employee = new Employee();
-    	/*employee.setEmpName("Senthil Kumar");;
-    	employee.setBranch("Pune");
+    	employee.setFirstName("hari");
+    	employee.setLastName("mallepally");
+
     	session.beginTransaction();
     	session.save(employee);
-    	session.getTransaction().commit();*/
+    	session.getTransaction().commit();
+    	
+    	Employee empFromDb =(Employee) session.get(Employee.class, 1);
+    	
+    	System.out.println(empFromDb.getEmailId() +" " + empFromDb.getFirstName());
+    	
+    	Query query = session.createQuery("select d from Department d, Employee e  e.department.id = d.id and where e.id=:id");
+    	//Query query = session.createQuery("select d from Department d where d.id = :id");
+    	query.setInteger("id", 1);
+    	
+    	List<Department> departments = query.list();
+    	
+    	System.out.println(departments.get(0).getDeptName());
+    	
     	
     	
 	}
