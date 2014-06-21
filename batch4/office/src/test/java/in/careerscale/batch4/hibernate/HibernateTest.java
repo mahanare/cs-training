@@ -35,9 +35,9 @@ public class HibernateTest {
     	
     	System.out.println(empFromDb.getEmailId() +" " + empFromDb.getFirstName());
     	
-    	Query query = session.createQuery("select d from Department d, Employee e  e.department.id = d.id and where e.id=:id");
-    	//Query query = session.createQuery("select d from Department d where d.id = :id");
-    	query.setInteger("id", 1);
+    	//Query query = session.createQuery("select d from Department d  inner join Employee e  where  d.id =e.department.id  and e.id=:empId");
+    	Query query = session.createQuery("select d from Department d where d.id = :id");
+    	query.setInteger("empId", 1);
     	
     	List<Department> departments = query.list();
     	
