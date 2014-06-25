@@ -1,4 +1,4 @@
-package hello;
+package in.careerscale.training.hari;
 
 public class Numbers {
 	
