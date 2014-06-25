@@ -9,6 +9,8 @@ public class HelloWorld {
 		Numbers numbers = new Numbers();
 		
 		numbers.printNumbers();
+		
+		System.out.println("Hi");
          
 	}
 
