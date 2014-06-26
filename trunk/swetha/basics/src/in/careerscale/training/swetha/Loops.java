@@ -1,5 +1,14 @@
 package in.careerscale.training.swetha;
 
+/***
+ * Assignments:
+ * 1.Recursion
+ * 2. Search
+ * 3. Sort
+ * 
+ * @author harinath
+ *
+ */
 public class Loops {
 
 	public void whileDemo() {

@@ -6,9 +6,9 @@ public class HelloWorld {
 	{
 		System.out.println("HelloWorld!!!");
 		Loops loops= new Loops();
-		loops.forloop();
-		loops.switchcase();
-		loops.ifstatement();
+		loops.forLoop();
+		loops.switchCase();
+		loops.ifStatement();
 
 	}
 
