@@ -1,6 +1,6 @@
 package in.careerscale.training.swetha;
 
-public class loops
+public class Loops
 {
 public void forloop(){
 	int i;
