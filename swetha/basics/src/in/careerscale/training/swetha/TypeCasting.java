@@ -1,6 +1,6 @@
 package in.careerscale.training.swetha;
 
-public class typecasting {
+public class TypeCasting {
 
 	public static void main(String[] args)
 	{
