@@ -1,6 +1,6 @@
 package in.careerscale.training.swetha;
 
-public class Bubblesort {
+public class BubbleSort {
 	public static void bubbleSort(int arr[]) {
 		int temp = 0;
 		int l = arr.length;
