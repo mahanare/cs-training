@@ -1,6 +1,6 @@
 package in.careerscale.training.swetha;
 
-public class Binarysearch {
+public class BinarySearch {
 	public static int binarySearch(int arr[],int start,int end,int key){
 		int mid=start+(end-start)/2;
 			if(key<arr[mid]){

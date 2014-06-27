@@ -1,6 +1,6 @@
 package in.careerscale.training.swetha;
 
-public class Linearsearch {
+public class LinearSearch {
 	public static int linearSearch(int arr[],int key){
 		for(int i=0;i<arr.length;i++){
 			if(key==arr[i]){
