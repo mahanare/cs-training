@@ -1,5 +1,8 @@
 package in.careerscale.training.hari.oops;
 
+import in.careerscale.training.hari.oops.inheritance.Child;
+import in.careerscale.training.hari.oops.inheritance.Parent;
+
 public class OopsDemo {
 
 	public static void main(String[] args) {
@@ -16,8 +19,8 @@ public class OopsDemo {
 		Parent p = new Child();
 
 		p.sayHello();
-		p.getLastName(); // accessible protected method in the same package.
-		p.getMiddleName();
+		//p.getLastName(); // accessible protected method in the same package.
+		//p.getMiddleName();
 
 		((Child) p).sayChildHello();
 

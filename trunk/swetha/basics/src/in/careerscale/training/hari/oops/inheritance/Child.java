@@ -1,4 +1,4 @@
-package in.careerscale.training.hari.oops;
+package in.careerscale.training.hari.oops.inheritance;
 
 public class Child extends Parent {
 	
