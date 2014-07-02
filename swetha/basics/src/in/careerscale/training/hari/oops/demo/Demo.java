@@ -1,6 +1,7 @@
 package in.careerscale.training.hari.oops.demo;
 
-import in.careerscale.training.hari.oops.Parent;
+import in.careerscale.training.hari.oops.inheritance.Parent;
+
 
 public class Demo {
 	
