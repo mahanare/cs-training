@@ -1,4 +1,4 @@
-package in.careerscale.training.hari.oops.inheritance;
+package in.careerscale.training.swetha.inheritance;
 
 public class AmericanFlamingo extends Bird {
 	String name;
