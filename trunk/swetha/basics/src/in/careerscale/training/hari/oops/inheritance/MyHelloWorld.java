@@ -5,7 +5,6 @@ public class MyHelloWorld implements HelloWorld,SmartWorld {
 	@Override
 	public void sayHello() {
 		System.out.println("hello");
-
 	}
 
 	@Override
@@ -16,7 +15,7 @@ public class MyHelloWorld implements HelloWorld,SmartWorld {
 
 	@Override
 	public void saySmartHello() {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubhttp://play.yahoo.com/vegasworld?adcamp=msgr&adop=org&adcit=1&adprop=yg
 		
 	}
 
