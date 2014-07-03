@@ -14,7 +14,7 @@ public class ExceptionHandling{
 				b[10]=20;	
 		}
 	
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		int[] a={10,20,30,40,50,60,70,80,50};
 		int[] b={10,30,40,50,60,70,80,90,100};
 	ExceptionHandling demo=new ExceptionHandling();
@@ -24,6 +24,7 @@ public class ExceptionHandling{
 	demo.throwsDemo(b);
 	}catch(Exception e){
 		System.out.println(e.getMessage());
+		throw e;
 	}
 	}
 
