@@ -16,4 +16,9 @@ public class SingletonClassDemo {
 		return number;
 	}
 	
+	public static void main(String[] args){
+		SingletonClassDemo.getInstance();
+		
+	}
+	
 }
