@@ -1,4 +1,4 @@
-package in.careerscale.training.swetha.ExceptionHandling;
+package in.careerscale.training.swetha.exceptions;
 
 public class ExceptionHandling{
 	public void exceptionHandling(int[] a){
