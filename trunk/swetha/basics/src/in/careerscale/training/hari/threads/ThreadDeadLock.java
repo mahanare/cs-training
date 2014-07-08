@@ -4,7 +4,6 @@ public class ThreadDeadLock {
 
 	
 	class FirstThread extends Thread{
-		
 		SharedObjectA s1;
 		SharedObjectB s2;
 		
@@ -18,11 +17,11 @@ public class ThreadDeadLock {
 			try{
 			synchronized (s1) {
 				
-				s1.displayNumbers();
+				s1.displayNumbers(1);
 				sleep(2000);
 				synchronized (s2) {
 					sleep(1000);
-					s2.displayNumbers();				
+					s2.displayNumbers(1);				
 					
 				}
 				
@@ -47,13 +46,13 @@ public class ThreadDeadLock {
 		public void run() {
 			
 			try{
-			synchronized (s2) {
+			synchronized (s1) {
 				
-				s2.displayNumbers();
+				s1.displayNumbers(2);
 				sleep(2000);
-				synchronized (s1) {
+				synchronized (s2) {
 					sleep(1000);
-					s1.displayNumbers();
+					s2.displayNumbers(2);
 					
 					
 				}
@@ -73,9 +72,10 @@ public class ThreadDeadLock {
 			this.id =id;
 		}
 		
-		public void displayNumbers(){
+		public void displayNumbers(int num){
+			int num1=num;
 			for(int i=0; i < 10; i++){
-				System.out.println("SharedObject with id " + id + "  -> " + i);
+				System.out.println("SharedObject with id " + num1 + "  -> " + i);
 				try {
 					Thread.sleep(5);
 				} catch (InterruptedException e) {
@@ -99,9 +99,10 @@ public class ThreadDeadLock {
 			this.id = id;
 			System.out.println("new shared object 1 with ID " + id);
 		}
-		public void displayNumbers(){
+		public void displayNumbers(int num){
+			int num1=num;
 			for(int i=10; i < 20; i++){
-				System.out.println("SharedObject1 with id " + id + "  -> " + i);
+				System.out.println("SharedObject1 with id " + num1 + "  -> " + i);
 				try {
 					Thread.sleep(5);
 				} catch (InterruptedException e) {

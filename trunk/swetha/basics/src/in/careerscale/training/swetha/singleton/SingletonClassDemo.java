@@ -18,6 +18,7 @@ public class SingletonClassDemo {
 	
 	public static void main(String[] args){
 		SingletonClassDemo.getInstance();
+		SingletonClassDemo.getInstance();
 		
 	}
 	
