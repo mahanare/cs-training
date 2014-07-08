@@ -24,6 +24,8 @@ public class MyRunnable implements Runnable {
 	}
 	
 	
+	// runnable -> running -> sleep/wait (WAITING)  -> running -> closed
+	
 	public static void main(String[] args) {
 		
 		MyRunnable runnable1 = new MyRunnable(1);
