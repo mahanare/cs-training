@@ -27,7 +27,7 @@ public class ThreadDeadLock {
 				}
 				
 		}
-			}catch (Exception e) {
+			}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	
@@ -60,7 +60,7 @@ public class ThreadDeadLock {
 				
 			}
 		
-		}catch(Exception e){
+		}catch(InterruptedException e){
 			e.printStackTrace();
 		}
 	}
