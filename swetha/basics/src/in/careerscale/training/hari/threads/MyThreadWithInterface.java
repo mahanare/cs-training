@@ -1,4 +1,4 @@
-package training.threads;
+package in.careerscale.training.hari.threads;
 
 public class MyThreadWithInterface implements Runnable {
 

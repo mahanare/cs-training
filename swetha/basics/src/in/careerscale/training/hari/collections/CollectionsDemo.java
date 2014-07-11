@@ -1,9 +1,11 @@
 package in.careerscale.training.hari.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class CollectionsDemo {
@@ -30,7 +32,7 @@ public class CollectionsDemo {
 		System.out.println(mySet.size());
 		
 		System.out.println(mySet);
-		
+	
 		Iterator ir =mySet.iterator();
 		
 		while(ir.hasNext()){
@@ -42,12 +44,14 @@ public class CollectionsDemo {
 	}
 	
 	public void listDemo(){
-		List myList = new ArrayList();
+		List<String> myList = new ArrayList<String>();
+		myList.add("test1");
 		myList.add("test");
 		myList.add("test");
+		myList.add("test2");
+		myList.add("test3");
 		myList.add("test");
-		myList.add("test");
-		myList.add("test");
+		myList.add("test5");
 		
 		myList.add("test");
 		
@@ -55,8 +59,25 @@ public class CollectionsDemo {
 		
 		System.out.println(myList);
 		
+		System.out.println(myList.get(2));
+		
+		myList.remove(1);
+		
+		System.out.println(myList);
+	}
+	
+	
+	public void mapDemo(){
+		Map map = new HashMap();
+		map.put("hari", 1000);
+		map.put("hari1", 1000);
+		map.put("hari2", 1000);
+		
+		map.get("hari");
+		
 		
 	}
+	
 
 	public static void main(String[] args) {
 		
