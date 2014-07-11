@@ -1,7 +1,9 @@
 package in.careerscale.training.hari.collections;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class CollectionsDemo {
@@ -38,13 +40,32 @@ public class CollectionsDemo {
 		
 		
 	}
+	
+	public void listDemo(){
+		List myList = new ArrayList();
+		myList.add("test");
+		myList.add("test");
+		myList.add("test");
+		myList.add("test");
+		myList.add("test");
+		
+		myList.add("test");
+		
+		System.out.println(myList.size());
+		
+		System.out.println(myList);
+		
+		
+	}
 
 	public static void main(String[] args) {
 		
 		String[] names = new String[100];
 		
-		CollectionsDemo setDemo = new CollectionsDemo();
-		setDemo.setDemo();
+		CollectionsDemo demo = new CollectionsDemo();
+		//setDemo.setDemo();
+		
+		demo.listDemo();
 		
 
 	}
