@@ -1,6 +1,7 @@
 package in.careerscale.training.hari.collections;
 
 import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -73,7 +74,7 @@ public class CollectionsDemo {
 		map.put("hari1", 1000);
 		map.put("hari2", 1000);
 		
-		map.get("hari");
+		System.out.println(map.get("hari"));
 		
 		
 	}
@@ -84,9 +85,11 @@ public class CollectionsDemo {
 		String[] names = new String[100];
 		
 		CollectionsDemo demo = new CollectionsDemo();
-		//setDemo.setDemo();
+		demo.setDemo();
 		
 		demo.listDemo();
+		demo.mapDemo();
+		
 		
 
 	}
