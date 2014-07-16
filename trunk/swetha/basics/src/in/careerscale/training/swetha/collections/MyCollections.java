@@ -1,6 +1,7 @@
 package in.careerscale.training.swetha.collections;
 
-import java.awt.List;
+import java.util.List;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -40,10 +41,11 @@ public class MyCollections {
 		System.out.println(map1.get("geetha"));
 		//can we use the iterator for map???
 		
+		
 	}
 	
 	public void studentAppereadOnExam(){
-		ArrayList<String> list1 = new ArrayList<String>();
+		List<String> list1 = new ArrayList<String>();
 		
 		list1.add("swetha");
 		list1.add("geetha");
