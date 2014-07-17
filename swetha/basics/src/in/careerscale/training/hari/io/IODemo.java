@@ -12,6 +12,8 @@ public class IODemo {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println(br.readLine());
 		
+		InputStreamReader reader = new InputStreamReader(System.in);
+	
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println(scanner.next());
