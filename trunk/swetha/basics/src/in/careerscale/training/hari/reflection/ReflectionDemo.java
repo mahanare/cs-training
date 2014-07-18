@@ -1,5 +1,6 @@
 package in.careerscale.training.hari.reflection;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -11,6 +12,9 @@ public class ReflectionDemo {
 	public void displayObjectProperties(Object mocha) throws IllegalArgumentException, IllegalAccessException, InvocationTargetException{
 		
 		Class classObject = mocha.getClass();
+		
+		Constructor[] constructors =classObject.getConstructors();
+		//constructors[0].
 		
 		Method[] methods = classObject.getMethods();
 		
