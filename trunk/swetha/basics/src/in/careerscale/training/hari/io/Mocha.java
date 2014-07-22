@@ -24,6 +24,8 @@ public class Mocha implements Beverage {
 
 	public String getSomeText() {
 		return someText;
+		
+		
 	}
 
 	
