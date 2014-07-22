@@ -2,7 +2,7 @@ package in.careerscale.training.hari.io;
 
 public class Coffee implements Beverage {
 	
-	Coffee(){
+	public Coffee(){
 		
 	}
 
