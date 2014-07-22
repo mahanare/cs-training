@@ -7,7 +7,7 @@ public class Caramel extends IceCreamDecorator{
 		// TODO Auto-generated constructor stub
 	}
 	public String getDescription(){
-		return Sundae.getDescription()+ addCaramel();
+		return super.getDescription()+ addCaramel();
 		
 	}
 	private String addCaramel() {
