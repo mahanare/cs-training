@@ -37,7 +37,8 @@ public class CollectionsDemo {
 		Iterator ir =mySet.iterator();
 		
 		while(ir.hasNext()){
-			System.out.println(ir.next());
+			Integer object = (Integer)ir.next();
+			System.out.println(object);
 		}
 		
 		
