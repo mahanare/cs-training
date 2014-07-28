@@ -102,7 +102,7 @@ public class JDBCApplication {
         	employeeId=rs.getInt(1);
         }
         rs.close();
-
+        
 		System.out.println("Generated employee id :" + employeeId);
 		con.close();
 
@@ -160,9 +160,9 @@ public class JDBCApplication {
 		try {
 			
 			//application.updateEmployee();
-			//application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
+			application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
 			//application.getEmployees();
-			application.getDeptNameWithCallableStatement(2);
+			//application.getDeptNameWithCallableStatement(2);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
