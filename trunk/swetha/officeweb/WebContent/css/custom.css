@@ -2,26 +2,24 @@
 
 h1{
 color: red;
-font-size:30px;
-
+font-size:20px;
 background-color: yellow;
 }
 
-h1 #myHeader{
+h1 + #myHeader{
 color: green !important;
-font-size:45px !important;
 background-color: orange;
 }
 
 .myCustomClass{
 color: red;
-font-size:80px;
+font-size:40px;
 background-color: fuchsia;
 }
 
-.myCustomClass myChildClass{
+.myCustomClass + .myChildClass{
 color: green !important;
-font-size:60px;
+font-size:30px;
 background-color: yellow !important;
 }
 
