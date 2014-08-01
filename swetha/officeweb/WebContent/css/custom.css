@@ -19,7 +19,6 @@ background-color: fuchsia;
 
 .myCustomClass + .myChildClass{
 color: green !important;
-font-size:30px;
 background-color: yellow !important;
 }
 
