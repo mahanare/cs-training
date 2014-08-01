@@ -1,0 +1,18 @@
+h1{
+	color: purple;
+	font-size:25px;
+}
+.myCustomClass{
+	color: red;
+	font-size:15px;
+	background-color:yellow;
+}
+#myHeader4{
+	color:blue;
+	font-size:30px;
+}
+
+h1 + myHeader{
+	color:orange;
+	font-size:35px;
+}
