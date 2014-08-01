@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+
+h1{
+color: red;
+font-size:30px;
+
+background-color: yellow;
+}
+
+h1 #myHeader{
+color: green !important;
+font-size:45px !important;
+background-color: orange;
+}
+
+.myCustomClass{
+color: red;
+font-size:80px;
+background-color: fuchsia;
+}
+
+.myCustomClass myChildClass{
+color: green !important;
+font-size:60px;
+background-color: yellow !important;
+}
+
+.myChildClass{
+color: green !important;
+font-size:60px;
+background-color: yellow !important;
+}
+
+#myHeader4{
+color: green;
+font-size:50px;
+background-color: fuchsia;
+
+}
+
+
