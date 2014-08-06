@@ -1,8 +1,10 @@
 package in.training.careerscale.web;
 
-import in.training.careerscale.dao.OfficeDAO;
+import in.training.careerscale.dao.RegistrationDAO;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,19 +37,35 @@ public class RegistrationServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+	protected void doPost1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter writer = response.getWriter();
+		boolean result=false;
+		String userName=request.getParameter("userName");
+		String pwd =request.getParameter("password");
+		
+		RegistrationDAO dao = new RegistrationDAO();
+		try {
+			result =dao.loginWithCredentials(userName, pwd);
+			writer.write("Login result is " + result);
+
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+			writer.write("Login result is " + result);
+		}
+	}
+	protected void doPost2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter writer = response.getWriter();
 		boolean result=false;
 		String firstName=request.getParameter("firstname");
 		String lastName =request.getParameter("lastname");
-		String gender =request.getParameter("sex");
-		String address =request.getParameter("line1") + request.getParameter("line2");
-		String state =request.getParameter("state");
-		Integer zipCode=request.getParameter("zipcode");
+		String userName =request.getParameter("username");
+		String password=request.getParameter("password");
 		
 		RegistrationDAO dao = new RegistrationDAO();
 		try {
-			result =dao.contactInfo(firstName,lastName,gender,address,state,zipCode);
+			result =dao.signingUp(firstName,lastName,userName,password);
 			writer.write("Login result is " + result);
 
 		} catch (SQLException e) {
