@@ -12,7 +12,7 @@ h1{
 	font-size:30px;
 }
 
-h1 + myHeader{
+h1 + #myHeader{
 	color:orange;
 	font-size:35px;
 }
