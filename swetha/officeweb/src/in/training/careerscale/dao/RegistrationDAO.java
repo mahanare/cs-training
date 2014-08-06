@@ -3,6 +3,7 @@ package in.training.careerscale.dao;
 import java.sql.CallableStatement;
 
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -32,7 +33,7 @@ Connection URL:    "jdbc:oracle:thin:@<hostname>:<port>:<sid>", "<user>", "<pass
  *
  */
 public class RegistrationDAO {
-	private static final String conString = "jdbc:mysql://localhost:3306/registration";
+	private static final String conString = "jdbc:mysql://localhost:3306/office";
 
 	static{
 		try {
@@ -48,23 +49,43 @@ public class RegistrationDAO {
 	}
 
  
+	public boolean loginWithCredentials(String userName, String password) throws SQLException {
+		boolean result = false;
+		Connection con = getConnection();
+		Statement stmt = con
+				.createStatement();
+		String query = "select  user_name, password from employee where user_name='" + userName +"' and password = '"+password+"'";
+		System.out.println("Query : " +query);
+		ResultSet rs = stmt.executeQuery(query);
+		while (rs.next()) {
+			// always fetch the data using column names and avoid use of index
+			// like rs.getInt(1).. preferred option is to do like
+			// rs.getInt("id"). this is future.
+			System.out.println( "  user_name  :" + rs.getString("user_name")
+					+ "   password :" + rs.getString("password"));
+			result = true;
+		}
+		rs.close();
+		con.close();
+		
+		return result;
 
-	public boolean contactInfo(String firstName, String lastName,
-			String gender, String address, String state, int zipcode) throws SQLException {
+	}
+
+
+	public boolean signingUp(String first_name, String last_name,
+			 String user_name , String password) throws SQLException {
 
 		boolean result = false;
 		Connection con = getConnection();
         
-		String query = "insert into employee(firstName,lastName,gender,address,state,zipcode) values(?, ?, ?, ?,?, ?,?)";
+		String query = "insert into employee(first_name,last_name,user_name,password) values(?, ?, ?, ?)";
 		PreparedStatement stmt = con.prepareStatement(query,Statement.RETURN_GENERATED_KEYS);
 		
-		stmt.setString(1, firstName);
-		stmt.setString(2, lastName);
-		stmt.setString(3, gender);
-		stmt.setString(4, address);
-		stmt.setString(5, state);
-		stmt.setInt(6, zipcode);
-		
+		stmt.setString(1, first_name);
+		stmt.setString(2, last_name);
+		stmt.setString(3, user_name);
+		stmt.setString(4, password);
 		
 		stmt.execute();
 		
@@ -103,22 +124,9 @@ public class RegistrationDAO {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-
-		RegistrationDAO application = new RegistrationDAO();
-		try {
-			
-			//application.updateEmployee();
-			//application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
-			//application.getEmployees();
-			//application.getDeptNameWithCallableStatement(2);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+	
 		
 
 	}
 
-}
+
