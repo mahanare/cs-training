@@ -1,6 +1,6 @@
 package in.training.careerscale.web;
 
-import in.training.careerscale.dao.OfficeDAO;
+import in.training.careerscale.dao.RegistrationDAO;
 
 
 import java.io.IOException;
@@ -53,7 +53,7 @@ public class HelloServlet extends HttpServlet {
 		String pwd =request.getParameter("passwd");
 		writer.write("Request parameter  password: " + pwd) ;
 		
-		OfficeDAO dao = new OfficeDAO();
+		RegistrationDAO dao = new RegistrationDAO();
 		try {
 			result =dao.loginWithCredentials(userName, pwd);
 			writer.write("Login result is " + result);
