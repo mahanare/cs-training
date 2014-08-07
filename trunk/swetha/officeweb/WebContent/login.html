@@ -2,18 +2,67 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Post example </title>
+<title>Login</title>
+<script type="text/javascript">
+	function validate() {
+
+		var userName = document.getElementById("userName");
+		var password = document.getElementById("passwd");
+
+		//alert(userName.value);
+		if (userName.value == undefined || userName.value == "") {
+			alert("user name can not be empty");
+			return false;
+		}
+		if (password.value == undefined || password.value == "") {
+			alert("password can not be empty");
+			return false;
+		}
+
+	}
+</script>
+
+<link rel="stylesheet" type="text/css"
+	href="scripts/css/jquery-ui-1.8.16.custom.css">
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	alert('hello');
+
+$().ready(
+				function() {
+					// validate signup form on keyup and submit
+					$("#login")
+							.validate(
+									{
+										rules : {
+											userName : "required",
+											passwd : "required",
+											
+
+										messages : {
+											userName : "Please enter your user name",
+											passwd : "Please enter your password",
+											
+										}
+									}
+									});
+				
+				});
+</script>
+
+
+
 </head>
 <body>
-<form name="post-example" method="post" action="hello">
+	<form id="login" name="post-example" method="post" action="login"
+		>   <!-- onsubmit="return validate()" -->
 
-User Name: <input type="text" name="userName" /> <br/>
-Password:<input type="password" name="passwd" /> <br/>
+		User Name: <input id="userName" type="text" name="userName" /> <br />
+		Password:<input id="passwd" type="password" name="passwd" /> <br />
+		<input type="submit" name="submit" value="Login" /> <input
+			type="reset" name="reset" value="reset" />
 
-<input type="submit" name="submit" value="Login" />
-
-<input type="reset" name="reset" value="reset" />
-
-</form>
+	</form>
 </body>
 </html>
