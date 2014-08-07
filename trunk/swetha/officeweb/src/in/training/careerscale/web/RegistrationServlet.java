@@ -38,24 +38,8 @@ public class RegistrationServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	
-	protected void doPost1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter writer = response.getWriter();
-		boolean result=false;
-		String userName=request.getParameter("userName");
-		String pwd =request.getParameter("password");
-		
-		RegistrationDAO dao = new RegistrationDAO();
-		try {
-			result =dao.loginWithCredentials(userName, pwd);
-			writer.write("Login result is " + result);
-
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-			writer.write("Login result is " + result);
-		}
-	}
-	protected void doPost2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter writer = response.getWriter();
 		boolean result=false;
 		String firstName=request.getParameter("firstname");
