@@ -3,15 +3,19 @@ package in.training.careerscale.web;
 import in.training.careerscale.dao.RegistrationDAO;
 
 
+
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class HelloServlet
@@ -27,6 +31,19 @@ public class LoginServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+    @Override
+    public void init() throws ServletException {
+    	// TODO Auto-generated method stub
+    	super.init();
+    	
+    }
+    
+    @Override
+    public void destroy() {
+    	// TODO Auto-generated method stub
+    	super.destroy();
+    }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,6 +54,18 @@ public class LoginServlet extends HttpServlet {
 		writer.write("Hello World");
 		writer.write("<br/>");
 		writer.write("Request parameter  name: " + request.getParameter("name"));
+		
+		writer.write("<br/>");
+		
+		Cookie[] cookies = request.getCookies();
+		if(cookies !=null)
+		for (Cookie cookie : cookies) {
+			writer.write("cookie name : " + cookie.getName() +"  value :" + cookie.getValue());
+		}
+		
+		HttpSession session = request.getSession();
+		writer.write((String)session.getAttribute("session value"));
+		
 	}
 
 	/**
