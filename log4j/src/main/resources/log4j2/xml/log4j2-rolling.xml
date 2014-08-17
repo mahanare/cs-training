@@ -9,12 +9,12 @@
 			<Policies>
 				<TimeBasedTriggeringPolicy interval="6"
 					modulate="true" />
-				<SizeBasedTriggeringPolicy size="0.01 MB" />
+				<SizeBasedTriggeringPolicy size="1 MB" />
 			</Policies>
 		</RollingFile>
 	</Appenders>
 	<Loggers>
-		<Root level="error">
+		<Root level="debug">
 			<AppenderRef ref="RollingFile" />
 		</Root>
 	</Loggers>

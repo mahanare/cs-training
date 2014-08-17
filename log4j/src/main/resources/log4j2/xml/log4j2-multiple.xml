@@ -9,7 +9,7 @@
 			<Policies>
 				<TimeBasedTriggeringPolicy interval="1"
 					modulate="true" />
-				<SizeBasedTriggeringPolicy size="0.1 MB" />
+				<SizeBasedTriggeringPolicy size="1 MB" />
 			</Policies>
 		</RollingFile>
 
@@ -21,11 +21,15 @@
 
 	<Loggers>
 
+		<Logger name="rollingLogger" level="info">
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+
 		<Logger name="Console" level="info">
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Root level="info">
-			<AppenderRef ref="RollingFile" />
+			<AppenderRef ref="Console" />
 		</Root>
 	</Loggers>
 </Configuration>
