@@ -7,16 +7,24 @@
 	<name>Log4j examples and the configuration</name>
 
 	<properties>
-		<log4j.version>2.0</log4j.version>
+		<log4j2.version>2.0</log4j2.version>
+		<log4j.version>1.2.17</log4j.version>
 		<junit.version>4.11</junit.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.0</version>
+			<version>${log4j2.version}</version>
 		</dependency>
-		<dependency>  
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
@@ -31,6 +39,6 @@
 		<repository>
 			<id>central repo1</id>
 			<url>http://repo1.maven.apache.org/maven2</url>
-		</repository>  
+		</repository>
 	</repositories>
 </project>
