@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN"  monitorInterval="300">
 	<Appenders>
-		<File name="file" fileName="c:/logs/app.log">
+		<File name="file" fileName="c:/logs/log4j2/log4j2.log">
 			<PatternLayout>
 				<Pattern>%d %p %c{4.} %C [%t] %m %ex%n</Pattern>
 			</PatternLayout>
