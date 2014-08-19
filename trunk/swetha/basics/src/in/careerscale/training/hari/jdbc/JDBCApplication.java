@@ -126,7 +126,7 @@ public class JDBCApplication {
 	 *  Here is a sample stored procedure for office schema.
 
     delimiter //
-	create procedure getDeptName(IN employee_id integer, out dept_name varchar(100))
+	create procedure getDeptName(IN employee_id integer, OUT dept_name varchar(100))
 		 begin
 		select d.name into dept_name from department d, employee e where e.id = employee_id and d.id =e.department_id ;
 		end //
@@ -160,9 +160,9 @@ public class JDBCApplication {
 		try {
 			
 			//application.updateEmployee();
-			application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
+			//application.insertEmployees("neelima" + Math.random(), "test1","neelima",  "lastname", 3, 2, 1);
 			//application.getEmployees();
-			//application.getDeptNameWithCallableStatement(2);
+			application.getDeptNameWithCallableStatement(2);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

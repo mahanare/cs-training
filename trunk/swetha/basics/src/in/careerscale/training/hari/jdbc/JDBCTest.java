@@ -6,13 +6,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
+
+import org.junit.Assert;
+
 import org.junit.Test;
 
 public class JDBCTest {
 	
 	
 	
-	@Test public void JDBCTest() throws SQLException{
+	@Test 
+	public void JDBCTest() throws SQLException{
 		
 		//Class.forName("com.mysql.jdbc.Driver");
 		
@@ -20,6 +25,9 @@ public class JDBCTest {
 	
 		Statement stmt =con.createStatement();
 		ResultSet results = stmt.executeQuery("select * from employee");
+
+		Assert.assertNotNull(results);
+
 		
 		while(results.next()){
 			System.out.println("Employee Id : " +results.getInt(1)  + " :: Employee Name " + results.getString(	"first_name") );
