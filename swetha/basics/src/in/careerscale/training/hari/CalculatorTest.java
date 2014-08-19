@@ -18,6 +18,7 @@ public class CalculatorTest {
 	@Test(expected = CalcException.class)
 	public void testForException() throws CalcException{
 		calci.add(101, 3);
+		fail("this case failed");
 	
 	}
 
