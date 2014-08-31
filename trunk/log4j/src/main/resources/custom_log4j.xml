@@ -7,7 +7,6 @@
 			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
 		</layout>
 	</appender>
-
 	<appender name="application" class="org.apache.log4j.RollingFileAppender">
 		<param name="maxFileSize" value="100KB" />
 		<param name="maxBackupIndex" value="5" />
@@ -17,18 +16,15 @@
 			<param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n" />
 		</layout>
 	</appender>
-
 	<logger name="in.careerscale">
 		<!-- Print only messages of level warn or above in the package in.careerscale -->
 		<level value="warn" />
 		<appender-ref ref="application" />
 	</logger>
-
 	<logger name="application">
 		<level value="info" />
 		<appender-ref ref="application" />
 	</logger>
-
 	<root>
 		<priority value="debug" />
 		<appender-ref ref="console" />
