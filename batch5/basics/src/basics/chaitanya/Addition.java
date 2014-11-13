@@ -4,11 +4,11 @@ public class Addition
 {
 	public static void main(String[] args) 
 	{
-	int A,B,C;
+	float A,B,C;
 	System.out.println("Enter A,B value:");
 	Scanner in = new Scanner(System.in);
-	A=in.nextInt();
-	B=in.nextInt();
+	A=in.nextFloat();
+	B=in.nextFloat();
 	C = A+B;
 	System.out.println("Sum 'C':"+C);
 	}
