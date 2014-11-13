@@ -13,4 +13,11 @@ public class Addition {
 		System.out.println("Sum 'C':" + C);
 		in.close();
 	}
+
+	public void sayHello() {
+		int i = 10;
+		if (i == 10) {
+			System.out.println("i " + i);
+		}
+	}
 }
