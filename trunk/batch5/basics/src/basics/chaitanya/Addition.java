@@ -11,5 +11,6 @@ public class Addition
 	B=in.nextFloat();
 	C = A+B;
 	System.out.println("Sum 'C':"+C);
+	in.close();
 	}
 }
