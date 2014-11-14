@@ -1,20 +1,16 @@
 package basics.chaitanya;
 
 public class JavaBasics {
-	private byte bytevalue;
-	private char character;
-	private int A, B, C;
-	private float D, E, F;
 
 	public void CharMode() {
-		
-		System.out.println("Enter a charcter:"); 
-		
+		char Character = 'A';
+		System.out.println("ASCII Value of given Character is:"
+				+ (int) Character);
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		JavaBasics basics = new JavaBasics();
+		basics.CharMode();
 	}
 
 }
