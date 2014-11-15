@@ -9,54 +9,61 @@ public class Datatypes {
 	private double doubleNumber;
 	private long longNumber;
 	private boolean bolvalue;
-	public void shortDemo(){
+
+	public void shortDemo() {
 		shortNumber = 32760;
 		System.out.println("short value is :" + shortNumber);
 		shortNumber = (short) 32780;
 		System.out.println("short value is:" + shortNumber);
 		shortNumber = (short) -32780;
 		System.out.println("short value is:" + shortNumber);
-		}
-	public void intDemo(){
+	}
+
+	public void intDemo() {
 		intNumber = 2147483646;
 		System.out.println("int value is :" + intNumber);
-		intNumber = (int) 2147483652;
+		intNumber = (int) 2147483652l;
 		System.out.println("int value is:" + intNumber);
-		intNumber = (int) -2147483656;
+		intNumber = (int) -2147483656l;
 		System.out.println("int value is:" + intNumber);
-		}
-	public void floatDemo(){
+	}
+
+	public void floatDemo() {
 		floatNumber = 54.6f;
 		System.out.println("float value is :" + floatNumber);
-		floatNumber = 2345.6f ;
+		floatNumber = 2345.6f;
 		System.out.println("float value is:" + floatNumber);
-		floatNumber =  -214748.56f;
+		floatNumber = -214748.56f;
 		System.out.println("float value is:" + floatNumber);
-		}
-	public void doubleDemo(){
+	}
+
+	public void doubleDemo() {
 		doubleNumber = 214.46;
 		System.out.println("double value is :" + doubleNumber);
 		doubleNumber = 21464644545545454544836.52;
 		System.out.println("double value is:" + doubleNumber);
-		doubleNumber =  -2147464654545454343434348.56;
+		doubleNumber = -2147464654545454343434348.56;
 		System.out.println("double value is:" + doubleNumber);
-		}
-	public void longDemo(){
+	}
+
+	public void longDemo() {
 		longNumber = 922453774;
 		System.out.println("long value is :" + longNumber);
-		longNumber = (long) 9999878753476214483;
+		longNumber = (long) 999987875347621448l;
 		System.out.println("long value is:" + longNumber);
-		longNumber =  (long) -9999147484665658256;
+		longNumber = (long) -999914748466565825l;
 		System.out.println("long value is:" + floatNumber);
-		}
-	public void booleanDemo(){
-		if(45>23){
+	}
+
+	public void booleanDemo() {
+		if (45 > 23) {
 			bolvalue = true;
-		System.out.println("boolean value is :" + bolvalue);}
-		else{
-			bolvalue=false;
-		System.out.println("boolean value is:" + bolvalue);}
+			System.out.println("boolean value is :" + bolvalue);
+		} else {
+			bolvalue = false;
+			System.out.println("boolean value is:" + bolvalue);
 		}
+	}
 
 	public void byteDemo() {
 
@@ -100,14 +107,14 @@ public class Datatypes {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Datatypes basics = new Datatypes();
-		basics.byteDemo();
-		basics.charDemo();
-		basics.stringDemo();
-		basics.shortDemo();
-		basics.intDemo();
-		basics.longDemo();
-		basics.floatDemo();
-		basics.doubleDemo();
+		// basics.byteDemo();
+		// basics.charDemo();
+		// basics.stringDemo();
+		// //basics.shortDemo();
+		// basics.intDemo();
+		// basics.longDemo();
+		// basics.floatDemo();
+		// basics.doubleDemo();
 		basics.booleanDemo();
 
 	}
