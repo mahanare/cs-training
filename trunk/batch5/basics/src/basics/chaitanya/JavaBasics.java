@@ -9,8 +9,8 @@ public class JavaBasics {
 		int Charadiff = Chara1 - Chara2;
 		System.out
 				.println("****************  CHARACTER DATA TYPE  ***************");
-		System.out.println("Char1:" + (int) Chara1);
-		System.out.println("Chara2:" + (int) Chara2);
+		System.out.println("Char1: " +  Chara1 + "="+ (int)Chara1);
+		System.out.println("Chara2: " + Chara2+ "="+ (int)Chara2);
 
 		System.out.println("Interger value of Given Characters sum:"
 				+ (int) Charasum);
