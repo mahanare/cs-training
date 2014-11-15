@@ -56,7 +56,8 @@ public class Datatypes {
 	}
 
 	public void booleanDemo() {
-		if (45 > 23) {
+		short a = 45, b = 23;
+		if (a > b) {
 			bolvalue = true;
 			System.out.println("boolean value is :" + bolvalue);
 		} else {
