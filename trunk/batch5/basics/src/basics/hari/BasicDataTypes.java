@@ -55,6 +55,21 @@ public class BasicDataTypes {
 		basics.charDemo();
 		basics.stringDemo();
 
+		Integer myInt = new Integer(100);
+
+		String input = "100";
+		Integer.parseInt(input);
+
+		Short myShort;
+
+		Long myLong;
+
+		Double myDouble;
+
+		Character character = new Character('A');
+
+		Float myFloat;
+
 	}
 
 }
