@@ -3,8 +3,9 @@ package basics.hari;
 public class Arrays {
 
 	public void arraysDemoForInt() {
-		int numbers[] = { 1, 2, 4, 5 };
-		int[] myNumbers = { 6, 7, 8, 9, 10 };
+		int numbers[] = { 1, 2, 4, 5 }; // regular array
+		int[] myNumbers = { 6, 7, 8, 9, 10 }; // declaration is little different
+												// but same as above.
 
 		for (int i : myNumbers) {
 			System.out.println("i value is : " + i);
