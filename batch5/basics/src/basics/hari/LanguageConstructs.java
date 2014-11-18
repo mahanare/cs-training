@@ -24,6 +24,10 @@ public class LanguageConstructs {
 		for (int i : numbers) {
 			System.out.println("i value from array :" + i);
 		}
+
+		for (int i = 10; i >= 0; i--) {
+			System.out.println(i);
+		}
 	}
 
 	public static void main(String[] args) {
