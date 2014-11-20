@@ -26,7 +26,7 @@ public class Calculator {
 	public void saveIntData(int a,int b){
 		this.a = a;
 		this.b = b;
-		System.out.println("Numbers Saved are = " + this.a +"   " + this.b);		
+		System.out.println("Numbers Saved are = " + this.a +"," + this.b);		
 	}
 	public int addOperation() {
 		saveIntData(a,b);
