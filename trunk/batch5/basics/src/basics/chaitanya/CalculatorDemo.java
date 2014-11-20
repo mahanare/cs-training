@@ -1,5 +1,8 @@
 package basics.chaitanya;
 
+import basics.chaitanya.*;
+import basics.hari.*;
+
 public class CalculatorDemo {
 
 	private static int result1,result2_1,result2_2,result3;
@@ -29,7 +32,7 @@ public class CalculatorDemo {
 
 		charresult = Calc.addOperation(1,'A');
 		System.out.println("Result of calculator with Character as input operand = " + charresult);
-
+		
 	}
 
 }
