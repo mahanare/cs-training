@@ -3,32 +3,45 @@ package basics.chaitanya;
 public class Calculator {
 
 	public int a,b;
-	public static int result1,result2;
-	public static String character, result3;
-	public static double d, result4;
+	public char c;
+	public static String character;
+	public static double d;
 
 	public Calculator() {
-		System.out.println("Default contructor");
+		// System.out.println("Default contructor");
 	}
 
 	public Calculator(int a, int b) {
 		this();
-		System.out.println("Second constructor");
+		// System.out.println("Second constructor");
 		this.a = a;
 		this.b = b;
 	}
 
 	public Calculator(int a, String character) {
 		this(a, Integer.parseInt(character));
-		System.out.println("Third constructor");
+		// System.out.println("Third constructor");
 	}
 
+	public void saveIntData(int a,int b){
+		this.a = a;
+		this.b = b;
+		System.out.println("Numbers Saved are = " + this.a +"   " + this.b);		
+	}
 	public int addOperation() {
-		return 10 + 20;
+		saveIntData(a,b);
+		return a+b;	
 	}
 
 	public int addOperation(int a, int b) {
+		saveIntData(a,b);
 		return a + b;
+	}
+
+	public int addOperation(int a,char c) {
+		int dummy = (int)c;
+		saveIntData(a,dummy);
+		return a + dummy;
 	}
 
 	public String addOperation(int a, String character) {
@@ -40,6 +53,7 @@ public class Calculator {
 	}
 
 	public int subOperation(int a, int b) {
+		saveIntData(a,b);
 		return a - b;
 	}
 
@@ -48,20 +62,8 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-		Calculator Calc1 = new Calculator();
-		Calculator Calc2 = new Calculator(1,2);
-		Calculator Calc3 = new Calculator(1,"200");
-		result1 = Calc1.addOperation();
-		result2 = Calc1.subOperation(1, 1000);
-		result3 = Calc2.addOperation(1, "+Chaitu");
-		result4 = Calc3.subOperation(120, 1.23);
-		System.out.println("RESULT WITHOUT ANY INPUT ARGUMENTS = " + result1);
-		System.out.println("RESULT WITH INPUT ARGUMENTS = " + result2);
-		System.out.println("RESULT WITH STRING AS ONE INPUT ARGUMENT = "
-				+ result3);
-		System.out
-				.println("RESULT WITH DOUBLE DATATYPE AS ONE INPUT ARGUMENT = "
-						+ result4);
+		// Calculator Calc = new Calculator();
+		// int result = Calc.addOperation(1,10);
+		// System.out.println(+result);
 	}
-
 }
