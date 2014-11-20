@@ -3,10 +3,10 @@ package basics.chaitanya;
 public class CalculatorDemo {
 
 	public static void main(String[] args) {
-		// Using main class of HelloWorlds from hari package.
+		// Using main class of HelloWorlds from basics.hari package.
 		basics.hari.HelloWorld hello = new basics.hari.HelloWorld();
 		hello.main(args);
-
+		
 		Calculator Calc = new Calculator();
 
 		int result1 = Calc.addOperation();
