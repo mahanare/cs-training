@@ -43,7 +43,7 @@ public class CalculatorDemo {
 				.println("Result of calculator with Character as input operand = "
 						+ result);
 
-		// Using Bytemode() which is written at JavaBasics class.
+		// Using Bytemode(); which is written at JavaBasics class.
 		basics.chaitanya.JavaBasics javabasics = new basics.chaitanya.JavaBasics();
 		javabasics.ByteMode();	
 	}

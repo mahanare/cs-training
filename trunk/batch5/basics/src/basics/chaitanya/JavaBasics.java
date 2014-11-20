@@ -30,7 +30,7 @@ public class JavaBasics {
 		System.out.println("****************  BYTE DATA TYPE  ***************");
 		System.out.println("A value : " + A);
 		System.out.println("B value : " + B);
-		System.out.println("Result value : " + result);
+		System.out.println("Result value, (A*B) = " + result);
 		int range = (int) Math.pow(2, 7);
 		System.out.println("Range of Byte data type : " + -(range) + "  to  "
 				+ (range - 1));
@@ -48,7 +48,7 @@ public class JavaBasics {
 		System.out.println("****************  SHORT DATA TYPE  ***************");
 		System.out.println("A value : " + A);
 		System.out.println("B value : " + B);
-		System.out.println("Result value : " + result);
+		System.out.println("Result value, (A*B) =  " + result);
 		int range = (int) Math.pow(2, 15);
 		System.out.println("Range of Byte data type : " + -(range) + "  to  "
 				+ (range - 1));
@@ -68,7 +68,7 @@ public class JavaBasics {
 				.println("****************  INTEGER DATA TYPE  ***************");
 		System.out.println("A value : " + A);
 		System.out.println("B value : " + B);
-		System.out.println("Result:" + result);
+		System.out.println("Result, (A*B) = " + result);
 		int range = (int) Math.pow(2, 31);
 		System.out.println("Range of Integer data type : " + -(range + 1)
 				+ "  to  " + (range));
