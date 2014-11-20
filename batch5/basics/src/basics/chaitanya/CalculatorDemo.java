@@ -1,11 +1,14 @@
 package basics.chaitanya;
 
-import basics.hari.*;
-
 public class CalculatorDemo {
 
 	public static void main(String[] args) {
+		// Using main class of HelloWorlds from hari package.
+		basics.hari.HelloWorld hello = new basics.hari.HelloWorld();
+		hello.main(args);
+
 		Calculator Calc = new Calculator();
+
 		int result1 = Calc.addOperation();
 		System.out.println("Result without any input operand to Calculator = "
 				+ result1);
@@ -40,14 +43,8 @@ public class CalculatorDemo {
 				.println("Result of calculator with Character as input operand = "
 						+ result);
 
-		// Using main class of HellowWorlds from hari package. 
-		basics.hari.HelloWorld hellow = new basics.hari.HelloWorld();
-		hellow.main(args);
-		
 		// Using Bytemode() which is written at JavaBasics class.
 		basics.chaitanya.JavaBasics basics = new basics.chaitanya.JavaBasics();
-		basics.main(args);
-		
+		basics.ByteMode();	
 	}
-
 }
