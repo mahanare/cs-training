@@ -1,5 +1,7 @@
 package basics.chaitanya;
 
+import basics.hari.*;
+
 public class CalculatorDemo {
 
 	public static void main(String[] args) {
@@ -37,5 +39,15 @@ public class CalculatorDemo {
 		System.out
 				.println("Result of calculator with Character as input operand = "
 						+ result);
+
+		// Using main class of HellowWorlds from hari package. 
+		basics.hari.HelloWorld hellow = new basics.hari.HelloWorld();
+		hellow.main(args);
+		
+		// Using Bytemode() which is written at JavaBasics class.
+		basics.chaitanya.JavaBasics basics = new basics.chaitanya.JavaBasics();
+		basics.main(args);
+		
 	}
+
 }
