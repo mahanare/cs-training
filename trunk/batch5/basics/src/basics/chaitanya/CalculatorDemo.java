@@ -44,7 +44,7 @@ public class CalculatorDemo {
 						+ result);
 
 		// Using Bytemode() which is written at JavaBasics class.
-		basics.chaitanya.JavaBasics basics = new basics.chaitanya.JavaBasics();
-		basics.ByteMode();	
+		basics.chaitanya.JavaBasics javabasics = new basics.chaitanya.JavaBasics();
+		javabasics.ByteMode();	
 	}
 }
