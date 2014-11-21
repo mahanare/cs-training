@@ -26,7 +26,7 @@ public class Calculator {
 	}
 
 	public Calculator(int number1, int number2) {
-		this();
+		// this();
 		System.out.println("2nd constructor");
 		this.number1 = number1;
 		this.number2 = number2;
@@ -45,7 +45,7 @@ public class Calculator {
 		this.number2 = number2;
 	}
 
-	private int addNumbers() {
+	protected int addNumbers() {
 		return number1 + number2;
 	}
 
@@ -65,7 +65,9 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-		Calculator calc = new Calculator();
+		Calculator calc = new Calculator(12, "1");
+		Calculator calc1 = new Calculator(15, 2);
+
 		// calc.
 	}
 }
