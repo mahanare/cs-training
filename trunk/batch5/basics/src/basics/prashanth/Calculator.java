@@ -2,8 +2,8 @@ package basics.prashanth;
 
 public class Calculator {
 
-	protected int a;
-	private int b;
+	public int a;
+	public int b;
 	public String ch;
 
 	public Calculator() {
@@ -19,23 +19,31 @@ public class Calculator {
 
 	}
 
+	public Calculator(int a, String b) {
+		this(a, Integer.parseInt(b));
+		System.out.println("my 3rd constructor");
+		// this.b = Integer.parseInt(b);
+
+	}
+
 	public int addNumbers(int a, int b) {
 		this.a = a;
 		this.b = b;
 		return a + b;
 	}
 
-	public int addNumbers(int a) {
+	private int addNumbers(int a) {
 		this.a = a;
 		return a + 3;
 	}
 
-	protected int addNumbers() {
-
+	int addNumbers() {
+		a = 5;
+		b = 3;
 		return a + b;
 	}
 
-	private int addNumbers(int a, String b) {
+	protected int addNumbers(int a, String b) {
 		this.a = a;
 		return a + 6;
 	}
