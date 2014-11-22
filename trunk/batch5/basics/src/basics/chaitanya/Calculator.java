@@ -8,7 +8,7 @@ public class Calculator {
 	public static double d;
 
 	public Calculator() {
-		// System.out.println("Default contructor");
+		// System.out.println("Default constructor");
 	}
 
 	public Calculator(int a, int b) {
