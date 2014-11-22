@@ -8,11 +8,11 @@ public class Calculator {
 	public static double d;
 
 	public Calculator() {
-		System.out.println("Default contructor");
+		// System.out.println("Default contructor");
 	}
 
 	public Calculator(int a, int b) {
-		this();
+		// this();
 		// System.out.println("Second constructor");
 		this.a = a;
 		this.b = b;
