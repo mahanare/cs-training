@@ -8,18 +8,18 @@ import basics.pradeep.LangConstructs;
 
 public class InheritanceDemo {
 
-	public void demoProtected() {
+	void demoProtected() {
 		AdvancedCalculator advCalc = new AdvancedCalculator();
 		int result = advCalc.addOperation(2, 3);
 		System.out.println("OUTPUT FROM INHERITANCE DEMO " + result);
 	}
 
-	public void hariCalculator() {
+	void hariCalculator() {
 		AdvCalculator hariadvCalc = new AdvCalculator(1, 2);
 		hariadvCalc.addNumbers(12, 13);
 	}
 
-	public void pradeepLangConst() {
+	void pradeepLangConst() {
 		LangConstructs langconst = new LangConstructs();
 		langconst.doWhileDemo();
 	}
