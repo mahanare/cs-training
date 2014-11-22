@@ -6,14 +6,13 @@ public class InheritanceDemo {
 
 	public void demoProtected() {
 		AdvancedCalculator advCalc = new AdvancedCalculator();
-		advCalc.addOperation(2, 3);
+		int result = advCalc.addOperation(2, 3);
+		System.out.println("OUTPUT FROM INHERITANCE DEMO " + result);
 	}
 
 	public static void main(String[] args) {
 		InheritanceDemo test = new InheritanceDemo();
-		
-		// System.out.println("OUTPUT FROM INHERITANCE DEMO " +test.demoProtected());
-		
+		test.demoProtected();
 
 	}
 
