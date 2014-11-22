@@ -8,7 +8,7 @@ public class Calculator {
 	public static double d;
 
 	public Calculator() {
-		// System.out.println("Default contructor");
+		System.out.println("Default contructor");
 	}
 
 	public Calculator(int a, int b) {
@@ -62,7 +62,7 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-		// Calculator Calc = new Calculator();
+		 Calculator Calc = new Calculator();
 		// int result = Calc.addOperation(1,10);
 		// System.out.println(+result);
 	}
