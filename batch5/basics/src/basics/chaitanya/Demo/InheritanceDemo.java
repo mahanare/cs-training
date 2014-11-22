@@ -1,6 +1,6 @@
 package basics.chaitanya.Demo;
 
-import basics.chaitanya.AdvancedCalculatorDemo;
+import basics.chaitanya.Inheritance.AdvancedCalculator;
 
 public class InheritanceDemo {
 
