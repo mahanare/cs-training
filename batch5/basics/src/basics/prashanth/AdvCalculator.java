@@ -6,10 +6,6 @@ public class AdvCalculator extends Calculator {
 		return super.addNumbers(a, b);
 	}
 
-	public void superDemo() {
-
-	}
-
 	public void protectDemo() {
 		a = 5;
 		System.out.println("my protected variable from parent class is" + a);
