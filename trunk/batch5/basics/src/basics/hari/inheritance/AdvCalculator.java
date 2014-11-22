@@ -1,4 +1,6 @@
-package basics.hari;
+package basics.hari.inheritance;
+
+import basics.hari.Calculator;
 
 /**
  * Inheritance:
@@ -8,8 +10,7 @@ package basics.hari;
  * Implement AdvancedCalculator with the following functionality. 1. use
  * constructor inheritance. Call Parent constructor from Child class. 2. demo
  * the super key word. This is similar to "this" keyword but to refer to parent
- * class.
- * protected, private, public scope explanation through code.
+ * class. protected, private, public scope explanation through code.
  * 
  * @author harinath
  * 

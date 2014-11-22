@@ -9,6 +9,8 @@ public class Demo {
 
 		System.out.println("Sum of 5, 10 is : " + result);
 
+		basics.chaitanya.Calculator calc3 = new basics.chaitanya.Calculator();
+
 		basics.chaitanya.Calculator calc2 = new basics.chaitanya.Calculator();
 		System.out.println(" result of substraction from chaitanya calc :"
 				+ calc2.subOperation(12, 3));
