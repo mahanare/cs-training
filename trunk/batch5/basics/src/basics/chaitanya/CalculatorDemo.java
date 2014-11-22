@@ -1,12 +1,14 @@
 package basics.chaitanya;
 
+import basics.hari.*;
+
 public class CalculatorDemo {
 
 	public static void main(String[] args) {
 		// Using main class of HelloWorlds from basics.hari package.
 		basics.hari.HelloWorld hello = new basics.hari.HelloWorld();
 		hello.main(args); // Fix me, Why I am getting warning in this line ?
-		
+
 		Calculator Calc = new Calculator();
 
 		int result1 = Calc.addOperation();
@@ -45,7 +47,7 @@ public class CalculatorDemo {
 
 		// Using Bytemode(); which is written at JavaBasics class.
 		basics.chaitanya.JavaBasics javabasics = new basics.chaitanya.JavaBasics();
-		javabasics.ByteMode();	
-	
+		javabasics.ByteMode();
+
 	}
 }
