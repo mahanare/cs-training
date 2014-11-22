@@ -6,8 +6,8 @@ public class CalculatorDemo {
 
 	public static void main(String[] args) {
 		// Using main class of HelloWorlds from basics.hari package.
-		basics.hari.HelloWorld hello = new basics.hari.HelloWorld();
-		hello.main(args); // Fix me, Why I am getting warning in this line ?
+		basics.hari.Calculator operation = new basics.hari.Calculator();
+		System.out.println("Result from Calculator of hari :"+operation.addNumbers(1,2)); 
 
 		Calculator Calc = new Calculator();
 
