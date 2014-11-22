@@ -4,8 +4,8 @@ public class Calculator {
 
 	public int a,b;
 	public char c;
-	public static String character;
-	public static double d;
+	public String character;
+	public double d;
 
 	public Calculator() {
 		// System.out.println("Default constructor");
