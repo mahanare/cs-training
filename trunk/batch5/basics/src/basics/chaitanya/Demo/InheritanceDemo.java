@@ -26,9 +26,9 @@ public class InheritanceDemo {
 
 	public static void main(String[] args) {
 		InheritanceDemo test = new InheritanceDemo();
-		test.demoProtected();
-		test.hariCalculator();
-		test.pradeepLangConst();
+		test.demoProtected();     // Using my Advanced calculator which is kept at basics.chaitanya.Inheritance folder.
+		test.hariCalculator();    // Using Hari Advanced Calculator which was kept at basics.hari.Inheritance folder.
+		test.pradeepLangConst();  // Accessing pradeep Language Constructs class which was located at basics.pradeep.
 
 	}
 
