@@ -1,7 +1,7 @@
 package basics.prashanth.inheritance;
 
 import basics.prashanth.Calculator;
-// this is the subclass (child ) of Calculator from different package called basics.prashanth
+// this is the subclass (child ) of Calculator (calculator is from different package called basics.prashanth)
 public class AdvCalculator2 extends Calculator {
        AdvCalculator2 advCal2 = new AdvCalculator2();
        advCal2.addNumbers();
