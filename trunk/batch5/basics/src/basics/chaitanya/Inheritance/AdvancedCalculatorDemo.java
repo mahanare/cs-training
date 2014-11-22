@@ -1,4 +1,4 @@
-package basics.chaitanya;
+package basics.chaitanya.Inheritance;
 
 public class AdvancedCalculatorDemo {
 
