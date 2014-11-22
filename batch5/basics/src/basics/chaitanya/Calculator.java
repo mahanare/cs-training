@@ -33,7 +33,7 @@ public class Calculator {
 		return a+b;	
 	}
 
-	public int addOperation(int a, int b) {
+	protected int addOperation(int a, int b) {
 		saveIntData(a,b);
 		return a + b;
 	}
