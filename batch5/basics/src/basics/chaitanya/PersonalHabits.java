@@ -1,6 +1,5 @@
 package basics.chaitanya;
 
-
 public class PersonalHabits extends LivingThings {
 
 	public void dogHabits() {
@@ -8,7 +7,7 @@ public class PersonalHabits extends LivingThings {
 	}
 
 	void humanHabits() {
-		System.out.println("Human can think unlike to an animal");
+		System.out.println("Human has a habit of thinking unlike to an animal");
 	}
 
 	void lionHabits() {
@@ -20,12 +19,12 @@ public class PersonalHabits extends LivingThings {
 	}
 
 	public void classificationOfHabits(String livingbeing) {
-		
+
 		LivingThings attribute = new LivingThings();
 		attribute.commonThings();
 
 		PersonalHabits habits = new PersonalHabits();
-		
+
 		if (livingbeing == "Dog") {
 			habits.dogHabits();
 		} else if (livingbeing == "Human") {
