@@ -1,5 +1,6 @@
 package basics.hari;
 
+
 public class Demo {
 
 	public static void main(String[] args) {
@@ -8,6 +9,8 @@ public class Demo {
 		int result = calc.addNumbers(5, 10);
 
 		System.out.println("Sum of 5, 10 is : " + result);
+
+		String name = "Hari";
 
 		basics.chaitanya.Calculator calc3 = new basics.chaitanya.Calculator();
 
