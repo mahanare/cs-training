@@ -66,10 +66,10 @@ public class LanguageConstructs {
 	public static void main(String[] args) {
 
 		LanguageConstructs Demos = new LanguageConstructs();
-		//Demos.ifDemo();
-		//Demos.simpleForDemo();
-		//Demos.intArrayForDemo();
-		Demos.whileDemo();
+		Demos.ifDemo();
+		Demos.simpleForDemo();
+		Demos.intArrayForDemo();
+		//Demos.whileDemo();
 
 	}
 
