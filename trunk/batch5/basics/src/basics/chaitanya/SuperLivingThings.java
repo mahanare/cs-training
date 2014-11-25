@@ -1,10 +1,13 @@
 package basics.chaitanya;
 
 public final class SuperLivingThings extends PersonalHabits {
-
+		
+	public SuperLivingThings(){
+		super();
+	}
+	
 	public static void main(String[] args) {
-		String animal = "Human";
-		PersonalHabits habits = new PersonalHabits();
-		habits.classificationOfHabits(animal);
+		PersonalHabits test = new PersonalHabits();
+		test.classificationOfHabits("Dogs");			
 	}
 }
