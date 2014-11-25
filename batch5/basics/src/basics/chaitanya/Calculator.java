@@ -63,7 +63,7 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		 Calculator Calc = new Calculator();
-		// int result = Calc.addOperation(1,10);
-		// System.out.println(+result);
+		 //int result = Calc.addOperation(1,10);
+		 //System.out.println(+result);
 	}
 }
