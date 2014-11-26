@@ -1,6 +1,6 @@
 package basics.chaitanya.ElectronicGadgets;
 
-public class Htc extends Mobile {
+public class HtcMobile extends Mobile {
 
 	@Override
 	public void brand() {

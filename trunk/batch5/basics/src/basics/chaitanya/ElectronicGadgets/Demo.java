@@ -18,7 +18,8 @@ public class Demo {
 		 * Mobile is provided with the brand name also.
 		 * Due to this reason, We can able to get the brand name also in addition to cost,power,specifications, purpose.
 		 */
-		Mobile device1 = new Htc();
+		Mobile device1 = (Mobile)device;
+		System.out.println("--------------------------------------------------------");
 		device1.brand();
 		device1.cost();
 		device1.power();
@@ -26,5 +27,12 @@ public class Demo {
 		device1.purpose();
 		
 		
+		ElectronicGadget device2 = new Lenovo();
+		System.out.println("--------------------------------------------------------");
+		device2.cost();
+		device2.power();
+		device2.purpose();
+		device2.specifications();
+			
 	}
 }
