@@ -10,19 +10,16 @@ public class Htc extends Mobile {
 	@Override
 	public void purpose() {
 		System.out.println("This is used for Calling, texting, Browsing");
-
 	}
 
 	@Override
 	public void cost() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("This Device Costs About 700 dollars");
 	}
 
 	@Override
 	public void specifications() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("This Device has 16Mp Camera and large Screen Size along with long battery life");
 	}
 
 }
