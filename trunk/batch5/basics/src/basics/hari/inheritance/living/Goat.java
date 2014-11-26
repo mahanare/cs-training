@@ -24,4 +24,8 @@ public class Goat extends Animal implements ILivingThing, IVegetarian {
 		System.out.println("Goat sleeps like other animals");
 
 	}
+
+	public void anotherMethod() {
+		System.out.println("just another method for demo");
+	}
 }

@@ -15,12 +15,20 @@ public class Demo {
 		sameDuck.speak();
 		sameDuck.fly();
 
-		ILivingThing dog = new Dog();
-		dog.eat();
-		dog.drinkWater();
+		ILivingThing goat = new Goat();
+		goat.eat();
+		goat.drinkWater();
+		// goat.anotherMethod();
 
-		IVegetarian sameDog = (IVegetarian) dog;
-		sameDog.eat();
+		IVegetarian sameGoat = (IVegetarian) goat;
+		sameGoat.eat();
+
+		Goat anotherSameGoat = (Goat) goat;
+		anotherSameGoat.drinkWater();
+		anotherSameGoat.sleep();
+		anotherSameGoat.speak();
+		anotherSameGoat.eat();
+		anotherSameGoat.anotherMethod();
 
 	}
 
