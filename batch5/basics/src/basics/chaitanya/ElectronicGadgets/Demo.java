@@ -8,6 +8,7 @@ public class Demo {
 		 * Due to this reason, we cannot get brand name for Apple device.
 		 */
 		ElectronicGadget device1 = new AppleMobile();		
+		System.out.println("----------------- The following Mobile information has been obtained from ElectronicGadget Class -------------------------");
 		device1.cost();
 		device1.power();
 		device1.specifications();
@@ -19,7 +20,7 @@ public class Demo {
 		 * Due to this reason, We can able to get the brand name also in addition to cost,power,specifications, purpose.
 		 */
 		Mobile device2 = (Mobile)device1;
-		System.out.println("--------------------------------------------------------");
+		System.out.println("----------------- Mobile Brand Name has been added which is provided at Mobile class -------------------------");
 		device2.brand();
 		device2.cost();
 		device2.power();
@@ -28,14 +29,14 @@ public class Demo {
 		
 		
 		ElectronicGadget device3 = new Lenovo();
-		System.out.println("--------------------------------------------------------");
+		System.out.println("------------------ Lenovo Laptop details are obtained from ElectronicGadget Class ----------------------");
 		device3.cost();
 		device3.power();
 		device3.purpose();
 		device3.specifications();
 		
 		Laptop device4 = (Laptop)device3;
-		System.out.println("--------------------------------------------------------");
+		System.out.println("----------------- Lenovo Laptop details are obtained from Laptop Class ---------------------");
 		device4.brand();
 		device4.cost();
 		device4.memoryCapacity();
@@ -45,6 +46,20 @@ public class Demo {
 		device4.specifications();
 		
 		/**
+		 * Here Samsung device is called using the Tablet instead of ElectronicGadget.
+		 * By this we can get all the device data without calling the ElectronicGadget unlike as above methods of calling. 
+		 */
+		Tablet device5 = new Samsung();
+		System.out.println("------------------ Samsung Tablet Details are obtained directly from Tablet Class ---------------------");
+		device5.cost();
+		device5.memoryCapacity();
+		device5.purpose();
+		device5.power();
+		device5.specifications();
+		device5.model();
+		System.out.println("---------------- An Example for Wrong type of Calling -------------------------");
+			
+		/**
 		 * Here I have made a wrong Instantiation call to device3. I have Defined device3 variable as a Lenovo tablet. 
 		 * But I tried to implement a call using the Mobile Specifications. This throws an exception in thread
 		 */
@@ -52,8 +67,6 @@ public class Demo {
 		device.cost();
 		device.power();
 		device.purpose();
-		
-		
-			
+				
 	}
 }
