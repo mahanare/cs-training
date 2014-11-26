@@ -1,6 +1,6 @@
 package basics.chaitanya.ElectronicGadgets;
 
-public class Lenovo extends Laptop {
+public class Lenovo extends Laptop implements ILenovo{
 
 	@Override
 	public void brand() {
