@@ -26,8 +26,7 @@ public class Demo {
 		device2.power();
 		device2.specifications();
 		device2.purpose();
-		
-		
+			
 		ElectronicGadget device3 = new Lenovo();
 		System.out.println("------------------ Lenovo Laptop details are obtained from ElectronicGadget Class ----------------------");
 		device3.cost();
