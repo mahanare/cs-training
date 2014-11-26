@@ -57,6 +57,17 @@ public class Demo {
 		device5.power();
 		device5.specifications();
 		device5.model();
+		
+		/**
+		 * Here Lenovo laptop has been called using ILenovo. 
+		 * ILenovo is an interface which is provided with only cost, purpose, specifications.
+		 */
+		ILenovo device6 = new Lenovo();
+		System.out.println("---------------- Lenovo laptop Details using ILenovo class -------------------------");
+		device6.cost();
+		device6.purpose();
+		device6.specifications();
+		
 		System.out.println("---------------- An Example for Wrong type of Calling -------------------------");
 			
 		/**
