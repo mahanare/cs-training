@@ -1,5 +1,6 @@
 package basics.hari.inheritance.living;
 
+
 public class Demo {
 
 	public static void main(String[] args) {
@@ -20,6 +21,9 @@ public class Demo {
 		goat.drinkWater();
 		// goat.anotherMethod();
 
+		// Calculator calc = new Calculator();
+		// IVegetarian sameGoat = (IVegetarian) calc;
+		// IVegetarian sameGoat = new Goat();
 		IVegetarian sameGoat = (IVegetarian) goat;
 		sameGoat.eat();
 
