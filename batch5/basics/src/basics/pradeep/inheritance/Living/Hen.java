@@ -1,6 +1,6 @@
 package basics.pradeep.inheritance.Living;
 
-public abstract class Hen extends LivingThing {
+public class Hen extends Bird {
 
 	@Override
 	public void eat() {
@@ -34,6 +34,13 @@ public abstract class Hen extends LivingThing {
 	public void wakeup() {
 		System.out.println("i wakeup at 10am");
 		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected void sing() {
+
+		System.out.println("I can sing...");
 
 	}
 
