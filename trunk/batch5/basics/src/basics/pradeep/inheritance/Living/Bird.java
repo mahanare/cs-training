@@ -4,7 +4,7 @@ public abstract class Bird extends LivingThing {
 	protected abstract void sing();
 
 	public void fly() {
-		// TODO Auto-generated method stub
+		System.out.println("I am bird so i can fly");
 
 	}
 

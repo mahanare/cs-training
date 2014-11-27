@@ -1,6 +1,6 @@
 package basics.pradeep.inheritance.Living;
 
-public abstract class Dog {
+public class Dog extends Animal {
 	public void speak() {
 
 		System.out.println("I bark");
@@ -19,6 +19,18 @@ public abstract class Dog {
 	}
 
 	public void sleep() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listen() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void wakeup() {
 		// TODO Auto-generated method stub
 
 	}

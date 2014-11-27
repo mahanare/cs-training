@@ -1,20 +1,10 @@
 package basics.pradeep.inheritance.Living;
 
-public abstract class ILivingThing {
+public interface ILivingThing {
 
-	public void eat() {
-		// TODO Auto-generated method stub
+	public void eat();
 
-	}
+	public void drinkWater();
 
-	public void drinkWater() {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void listen() {
-		// TODO Auto-generated method stub
-
-	}
-
+	public void listen();
 }

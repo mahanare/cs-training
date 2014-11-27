@@ -1,6 +1,6 @@
 package basics.pradeep.inheritance.Living;
 
-public abstract class Goat extends ILivingThing {
+public class Goat extends Animal implements ILivingThing {
 
 	public void sleep() {
 		// TODO Auto-generated method stub
@@ -13,6 +13,24 @@ public abstract class Goat extends ILivingThing {
 	}
 
 	public void anotherMethod() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listen() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void wakeup() {
 		// TODO Auto-generated method stub
 
 	}
