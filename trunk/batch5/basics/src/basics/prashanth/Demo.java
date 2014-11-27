@@ -12,6 +12,9 @@ public class Demo {
 		cat.ieat();
 		cat.ispeak();
 
+		Birds bird = new Parrot();
+		bird.drink();
+
 	}
 
 }
