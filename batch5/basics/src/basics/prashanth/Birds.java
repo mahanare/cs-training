@@ -1,6 +1,6 @@
 package basics.prashanth;
 
-public class Birds extends LivingBeings {
+public abstract class Birds extends LivingBeings {
 
 	@Override
 	public void drink() {
@@ -13,5 +13,7 @@ public class Birds extends LivingBeings {
 		System.out.println("Birds rest");
 
 	}
+
+	public abstract void fly();
 
 }
