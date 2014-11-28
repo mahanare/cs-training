@@ -33,14 +33,16 @@ public class Demo {
 		} else {
 			System.out.println("demo1 and demo2 are not same");
 		}
-
+		
 		Demo demo3 = demo1;
+		
 
 		if (demo1 == demo3) {
 			System.out.println("demo1 and demo3 are same");
 		} else {
 			System.out.println("demo1 and demo3 are not same");
 		}
+		
 
 	}
 

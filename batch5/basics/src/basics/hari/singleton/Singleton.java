@@ -24,4 +24,15 @@ public class Singleton {
 
 	}
 
+	public static void main(String[] args) {
+		Singleton single1 = new Singleton();
+		Singleton single2 = new Singleton();
+		Singleton single3 = new Singleton();
+
+		// you can create more objects with main method in the singleton class.
+		// It doesn't restrict because within same class we can use the private
+		// constructor.
+
+	}
+
 }
