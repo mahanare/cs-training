@@ -26,10 +26,10 @@ public class Demo {
 			System.out.println("Within AE block");
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		} catch (Exception ae) {
+		} catch (Exception b) {
 			System.out.println("Within AE block");
-			ae.printStackTrace();
-			System.out.println(ae.getMessage());
+			b.printStackTrace();
+			System.out.println(b.getMessage());
 		}
 
 	}
