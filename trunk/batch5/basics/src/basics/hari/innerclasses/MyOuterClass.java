@@ -13,4 +13,17 @@ public class MyOuterClass {
 		}
 	}
 
+	public void demoLocalInnerClass() {
+
+		class MyLocalClass {
+			public void sayHello() {
+				System.out.println("Hello from local class");
+			}
+		}
+
+		MyLocalClass myLocal = new MyLocalClass();
+		myLocal.sayHello();
+
+	}
+
 }
