@@ -181,6 +181,7 @@ public class Demo {
 
 		myStudents.put("Hari", new Student("Hari", "1"));
 		myStudents.put("pradeep", new Student("pradeep", "2"));
+		myStudents.put("Hari", new Student("Hari123", "1"));
 
 		Set<String> keys = myStudents.keySet();
 

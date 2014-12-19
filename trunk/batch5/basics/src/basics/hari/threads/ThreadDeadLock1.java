@@ -49,6 +49,8 @@ public class ThreadDeadLock1 {
 			try {
 				synchronized (s2) {
 					// sleep(5000);
+					s2.wait();
+
 					synchronized (s1) {
 						s2.displayNumbers();
 						sleep(5000);

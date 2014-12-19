@@ -91,6 +91,7 @@ public class ThreadDeadLock {
 					}
 
 				}
+
 				// assert Thread.holdsLock(s1);
 				// assert Thread.holdsLock(s2);
 
