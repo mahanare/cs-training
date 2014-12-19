@@ -1,5 +1,7 @@
 package basics.hari;
 
+import java.io.Serializable;
+
 /**
  * 
  * List of keywords.
@@ -13,8 +15,12 @@ package basics.hari;
  * @author harinath
  * 
  */
-public class Calculator {
+public class Calculator implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int number1;
 	private int number2;
 
@@ -45,7 +51,7 @@ public class Calculator {
 		this.number2 = number2;
 	}
 
-	protected int addNumbers() {
+	public int addNumbers() {
 		return number1 + number2;
 	}
 
