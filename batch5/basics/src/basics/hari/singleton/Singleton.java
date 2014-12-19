@@ -24,7 +24,7 @@ public class Singleton {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		Singleton single1 = new Singleton();
 		Singleton single2 = new Singleton();
 		Singleton single3 = new Singleton();
