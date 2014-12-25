@@ -181,9 +181,9 @@ public class JDBCApplication {
 			// application.updateEmployee();
 			// application.insertEmployees("neelima" + Math.random(),
 			// "test1","neelima", "lastname", 3, 2, 1);
-			// application.getEmployees();
+			application.getEmployees();
 			// application.getDeptNameWithCallableStatement(2);
-			application.batchInsertDemo();
+			// application.batchInsertDemo();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
