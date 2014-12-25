@@ -14,6 +14,7 @@ public class Calculator {
 		System.out.println("first Character");
 		this.number1 = number1;
 		this.number2 = number2;
+
 	}
 
 	public Calculator(int number1, String number2) {
@@ -29,7 +30,11 @@ public class Calculator {
 	}
 
 	protected int addNumbers() {
-		return number1 + number2;
+		int result = number1 + number2;
+		System.out.println("addition of " + number1 + "  " + number2 + " = "
+				+ result);
+		return result;
+
 	}
 
 	public int addNumbers(int number1, int number2) {
