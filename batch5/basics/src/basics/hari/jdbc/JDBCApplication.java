@@ -52,6 +52,7 @@ public class JDBCApplication {
 			System.out.println("Employee Id  : " + rs.getInt("id")
 					+ "  user_name  :" + rs.getString("user_name")
 					+ "   password :" + rs.getString("password"));
+
 		}
 		rs.close();
 		stmt.close();
