@@ -1,0 +1,42 @@
+@CHARSET "ISO-8859-1";
+h2{
+font-size: 80px;
+color: green;
+border: medium ;
+border-color: red;
+border-style: solid;
+background-color: yellow;
+
+}
+
+.hello{
+font-size: 40px !important;
+font-family:fantasy;
+color: green;
+border: medium ;
+border-color: red;
+border-style: dashed;
+background-color: yellow;
+
+}
+
+.anotherClass{
+font-size: 30px ;
+font-family:fantasy;
+color: olive !important;
+border: medium ;
+border-color: red;
+border-style: dotted;
+background-color: lime;
+
+}
+
+#myStyle{
+font-size: 30px ;
+font-family:cursive ;
+color: fuchsia !important;
+border: medium ;
+border-color: orange;
+border-style: ridge;
+background-color:navy;
+}
