@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+h4{
+font-size: 60px;
+color: green;
+border: medium ;
+border-color: green;
+border-style: solid;
+background-color: blue;
+
+}
+
+.class1{
+font-size: 30px !important;
+font-family:fantasy;
+color: yellow;
+border: medium ;
+border-color: red;
+border-style: dashed;
+background-color: green;
+
+}
+.class2{
+font-size: 40px ;
+font-family:fantasy;
+color: olive !important;
+border: medium ;
+border-color: red;
+border-style: dotted;
+background-color: lime;
+
+}
+
+#usingid{
+font-size: 50px ;
+font-family:cursive ;
+color: fuchsia !important;
+border: medium ;
+border-color: orange;
+border-style: ridge;
+background-color:navy;
+}
