@@ -8,10 +8,31 @@ function hello(){
 	
 	alert("Hello");
 }
+function textchange(e){
+	alert(e.value);
+	alert(document.getElementById("name").valueOf().value);
+}
+
 </script>
 
 </head>
 <body>
-<input type="button" value="say Hello" onclick="hello()" />
+<input type="button" value="say Hello" onclick="hello()" /> <br />
+<input type="text" id="name" onchange="textchange(this)" /> <br />
+
+<input type="radio" name="sex" value="male" onclick="textchange(this)"  /> Male
+<input type="radio" name="sex" value="female" onclick="textchange(this)"/> Female
+<input type="radio" name="sex1" value="cantsay" onclick="textchange(this)"/>Cannot say <br />
+
+<input type="checkbox" name="sexCheck" value="male" onclick="textchange(this)" /> Male
+<input type="checkbox" name="sexCheck" value="female" onclick="textchange(this)"/> Female
+<input type="checkbox" name="sexCheck" value="cant say" onclick="textchange(this)" /> Dont know/Cannt say <br/>
+
+<select  name='gender' multiple="multiple" onselect="textchange(this)"> 
+<option value="1" >Male</option>
+<option value="2" >Female</option>
+</select>
+
+
 </body>
 </html>
