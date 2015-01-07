@@ -8,11 +8,27 @@
 function hello(){
 	
 	alert("Hello");
+	console.info("Hello");
 }
+
+function textChange(e){
+	
+	alert(e.value);
+	alert(document.getElementById("name").valueOf().value);
+	console.info(e.value);
+
+}
+
 </script>
+
 
 </head>
 <body>
 <input type="button" value="say Hello" onclick="hello()" />
+
+<input type="text" id="name"  onchange="textChange(this)"   />
+
+
+
 </body>
 </html>
