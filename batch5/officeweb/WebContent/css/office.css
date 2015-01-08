@@ -1,24 +1,11 @@
 @CHARSET "ISO-8859-1";
 .center-box{
-	margin: 10em 10em 10em 10em;
+	margin:100mm 100mm 100mm;
 }
-
 .row{
-	display: block;
+	display: purple;
 	border: medium;
-	border-width: 0.25em;
-	border-color: green;
-	color: lime;
-}
-
-.column{
-	width:25%;
-	display: inline-block;
-}
-
-.heading{
-	font-style: italic;
-	font-size:  3em;
-	color: orange !important;
-	text-align: center;
+	border-width:0.50em;
+	border-color: blue;
+	color: orange;
 }
