@@ -37,4 +37,14 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogonServlet</display-name>
+    <servlet-name>LogonServlet</servlet-name>
+    <servlet-class>com.training.officeweb.LogonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogonServlet</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
 </web-app>
