@@ -38,6 +38,16 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   <servlet>
+    <display-name>LoginServletPradeep</display-name>
+    <servlet-name>LoginServletPradeep</servlet-name>
+    <servlet-class>com.training.officeweb.Login1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServletPradeep</servlet-name>
+    <url-pattern>/pradeep/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
     <description></description>
     <display-name>LogonServlet</display-name>
     <servlet-name>LogonServlet</servlet-name>
@@ -55,6 +65,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Register</servlet-name>
-    <url-pattern>/Register</url-pattern>
+    <url-pattern>/register</url-pattern>
   </servlet-mapping>
 </web-app>
