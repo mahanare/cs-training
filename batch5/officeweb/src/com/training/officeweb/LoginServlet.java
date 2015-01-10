@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.training.officeweb.dao.OfficeDAO;
 
@@ -30,7 +32,16 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
+		Cookie[] cookies = request.getCookies();
+
+		for (Cookie cookie : cookies) {
+
+			System.out.println(cookie.getName() + " value : "
+					+ cookie.getValue());
+		}
+		HttpSession session = request.getSession();
+		System.out.println((String) session.getAttribute("sessionTraining"));
 	}
 
 	/**
