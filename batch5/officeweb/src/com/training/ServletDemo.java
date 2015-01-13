@@ -56,6 +56,9 @@ public class ServletDemo extends HttpServlet {
 		request.getSession().setAttribute("sessionTraining",
 				"on 10th of Jan 2015");
 
+		response.getWriter().write(
+				"<h1> Hello cookies and session values are set </h1>");
+
 	}
 
 	/**
