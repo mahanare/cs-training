@@ -13,8 +13,11 @@ Hello, this is html code from jsp file.
 <%
 String name =request.getParameter("name");
 out.write("Hello "+ name +"  This is from JSP snippet");
-
 %>
+
+<--! int i=10; -->
+
+<%! %>
 
 </body>
 </html>
