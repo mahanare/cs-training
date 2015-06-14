@@ -1,0 +1,1 @@
+This project contains code samples for careerscale training articles/books
